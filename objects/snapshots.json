@@ -1,0 +1,2338 @@
+[
+  {
+    "qInfo": {
+      "qId": "0ba2ba72-9927-48b4-86b0-dcfb5d096bc2",
+      "qType": "snapshot"
+    },
+    "qMetaDef": {
+      "title": "",
+      "description": "",
+      "annotation": "Test"
+    },
+    "creationDate": "2020-01-21T13:02:10.312Z",
+    "qMeta": {
+      "privileges": [
+        "read",
+        "update",
+        "delete",
+        "exportdata"
+      ]
+    },
+    "qSelectionInfo": {},
+    "qHyperCube": {
+      "qSize": {
+        "qcx": 9,
+        "qcy": 91
+      },
+      "qDimensionInfo": [
+        {
+          "qFallbackTitle": "Purchase Order",
+          "qApprMaxGlyphCount": 14,
+          "qCardinal": 436,
+          "qSortIndicator": "A",
+          "qGroupFallbackTitles": [
+            "Purchase Order"
+          ],
+          "qGroupPos": 0,
+          "qStateCounts": {
+            "qLocked": 0,
+            "qSelected": 0,
+            "qOption": 91,
+            "qDeselected": 0,
+            "qAlternative": 0,
+            "qExcluded": 345,
+            "qSelectedExcluded": 0,
+            "qLockedExcluded": 0
+          },
+          "qTags": [
+            "$ascii",
+            "$text"
+          ],
+          "qDimensionType": "D",
+          "qGrouping": "N",
+          "qNumFormat": {
+            "qType": "U",
+            "qnDec": 0,
+            "qUseThou": 0
+          },
+          "qIsAutoFormat": true,
+          "qGroupFieldDefs": [
+            "Purchase Order"
+          ],
+          "qMin": "NaN",
+          "qMax": "NaN",
+          "qAttrExprInfo": [
+            {
+              "qMin": 4278222848,
+              "qMax": 4286578688,
+              "qFallbackTitle": "=if ( Date([Est. time of arrival - Destination]) + 4  < today ()  and isnull ([Actual time of arrival - Destination]), red() , green()) ",
+              "qMinText": "RGB(0,128,0)",
+              "qMaxText": "RGB(128,0,0)",
+              "qNumFormat": {
+                "qType": "U",
+                "qnDec": 10,
+                "qUseThou": 0
+              },
+              "id": "cellBackgroundColor"
+            }
+          ],
+          "qAttrDimInfo": [],
+          "qCardinalities": {
+            "qCardinal": 436,
+            "qHypercubeCardinal": 91,
+            "qAllValuesCardinal": -1
+          },
+          "autoSort": true,
+          "cId": "KrJCur",
+          "othersLabel": "Others",
+          "textAlign": {
+            "auto": true,
+            "align": "left"
+          },
+          "representation": {
+            "type": "text",
+            "urlLabel": ""
+          }
+        },
+        {
+          "qFallbackTitle": "Business Unit",
+          "qApprMaxGlyphCount": 100,
+          "qCardinal": 8,
+          "qSortIndicator": "A",
+          "qGroupFallbackTitles": [
+            "Business Unit"
+          ],
+          "qGroupPos": 0,
+          "qStateCounts": {
+            "qLocked": 0,
+            "qSelected": 0,
+            "qOption": 6,
+            "qDeselected": 0,
+            "qAlternative": 0,
+            "qExcluded": 2,
+            "qSelectedExcluded": 0,
+            "qLockedExcluded": 0
+          },
+          "qTags": [
+            "$text"
+          ],
+          "qDimensionType": "D",
+          "qGrouping": "N",
+          "qNumFormat": {
+            "qType": "U",
+            "qnDec": 0,
+            "qUseThou": 0
+          },
+          "qIsAutoFormat": true,
+          "qGroupFieldDefs": [
+            "Business Unit"
+          ],
+          "qMin": "NaN",
+          "qMax": "NaN",
+          "qAttrExprInfo": [],
+          "qAttrDimInfo": [],
+          "qCardinalities": {
+            "qCardinal": 8,
+            "qHypercubeCardinal": 6,
+            "qAllValuesCardinal": -1
+          },
+          "autoSort": true,
+          "cId": "PuyyP",
+          "othersLabel": "Others",
+          "textAlign": {
+            "auto": true,
+            "align": "left"
+          },
+          "representation": {
+            "type": "text",
+            "urlLabel": ""
+          }
+        },
+        {
+          "qFallbackTitle": "Service Provider",
+          "qApprMaxGlyphCount": 48,
+          "qCardinal": 8,
+          "qSortIndicator": "A",
+          "qGroupFallbackTitles": [
+            "Service Provider"
+          ],
+          "qGroupPos": 0,
+          "qStateCounts": {
+            "qLocked": 0,
+            "qSelected": 0,
+            "qOption": 4,
+            "qDeselected": 0,
+            "qAlternative": 0,
+            "qExcluded": 4,
+            "qSelectedExcluded": 0,
+            "qLockedExcluded": 0
+          },
+          "qTags": [
+            "$text"
+          ],
+          "qDimensionType": "D",
+          "qGrouping": "N",
+          "qNumFormat": {
+            "qType": "U",
+            "qnDec": 0,
+            "qUseThou": 0
+          },
+          "qIsAutoFormat": true,
+          "qGroupFieldDefs": [
+            "Service Provider"
+          ],
+          "qMin": "NaN",
+          "qMax": "NaN",
+          "qAttrExprInfo": [],
+          "qAttrDimInfo": [],
+          "qCardinalities": {
+            "qCardinal": 8,
+            "qHypercubeCardinal": 4,
+            "qAllValuesCardinal": -1
+          },
+          "autoSort": true,
+          "cId": "pLXsRN",
+          "othersLabel": "Others",
+          "textAlign": {
+            "auto": true,
+            "align": "left"
+          },
+          "representation": {
+            "type": "text",
+            "urlLabel": ""
+          }
+        },
+        {
+          "qFallbackTitle": "Carrier Name",
+          "qApprMaxGlyphCount": 29,
+          "qCardinal": 194,
+          "qSortIndicator": "A",
+          "qGroupFallbackTitles": [
+            "Carrier Name"
+          ],
+          "qGroupPos": 0,
+          "qStateCounts": {
+            "qLocked": 0,
+            "qSelected": 0,
+            "qOption": 44,
+            "qDeselected": 0,
+            "qAlternative": 0,
+            "qExcluded": 150,
+            "qSelectedExcluded": 0,
+            "qLockedExcluded": 0
+          },
+          "qTags": [
+            "$text"
+          ],
+          "qDimensionType": "D",
+          "qGrouping": "N",
+          "qNumFormat": {
+            "qType": "U",
+            "qnDec": 0,
+            "qUseThou": 0
+          },
+          "qIsAutoFormat": true,
+          "qGroupFieldDefs": [
+            "Carrier Name"
+          ],
+          "qMin": "NaN",
+          "qMax": "NaN",
+          "qAttrExprInfo": [],
+          "qAttrDimInfo": [],
+          "qCardinalities": {
+            "qCardinal": 194,
+            "qHypercubeCardinal": 44,
+            "qAllValuesCardinal": -1
+          },
+          "autoSort": true,
+          "cId": "DqeuZjY",
+          "othersLabel": "Others",
+          "textAlign": {
+            "auto": true,
+            "align": "left"
+          },
+          "representation": {
+            "type": "text",
+            "urlLabel": ""
+          }
+        },
+        {
+          "qFallbackTitle": "Waybill Number",
+          "qApprMaxGlyphCount": 17,
+          "qCardinal": 213,
+          "qSortIndicator": "D",
+          "qGroupFallbackTitles": [
+            "Waybill Number"
+          ],
+          "qGroupPos": 0,
+          "qStateCounts": {
+            "qLocked": 0,
+            "qSelected": 0,
+            "qOption": 43,
+            "qDeselected": 0,
+            "qAlternative": 0,
+            "qExcluded": 170,
+            "qSelectedExcluded": 0,
+            "qLockedExcluded": 0
+          },
+          "qTags": [],
+          "qDimensionType": "D",
+          "qReverseSort": true,
+          "qGrouping": "N",
+          "qNumFormat": {
+            "qType": "U",
+            "qnDec": 0,
+            "qUseThou": 0
+          },
+          "qIsAutoFormat": true,
+          "qGroupFieldDefs": [
+            "Waybill Number"
+          ],
+          "qMin": 590198397,
+          "qMax": 1099001684,
+          "qAttrExprInfo": [],
+          "qAttrDimInfo": [],
+          "qCardinalities": {
+            "qCardinal": 213,
+            "qHypercubeCardinal": 44,
+            "qAllValuesCardinal": -1
+          },
+          "autoSort": true,
+          "cId": "cwEJL",
+          "othersLabel": "Others",
+          "textAlign": {
+            "auto": true,
+            "align": "left"
+          },
+          "representation": {
+            "type": "text",
+            "urlLabel": ""
+          }
+        },
+        {
+          "qFallbackTitle": "Est. time of arrival - Destination",
+          "qApprMaxGlyphCount": 8,
+          "qCardinal": 124,
+          "qSortIndicator": "A",
+          "qGroupFallbackTitles": [
+            "Est. time of arrival - Destination"
+          ],
+          "qGroupPos": 0,
+          "qStateCounts": {
+            "qLocked": 0,
+            "qSelected": 0,
+            "qOption": 25,
+            "qDeselected": 0,
+            "qAlternative": 0,
+            "qExcluded": 99,
+            "qSelectedExcluded": 0,
+            "qLockedExcluded": 0
+          },
+          "qTags": [
+            "$numeric",
+            "$integer",
+            "$timestamp",
+            "$date"
+          ],
+          "qDimensionType": "N",
+          "qGrouping": "N",
+          "qNumFormat": {
+            "qType": "D",
+            "qnDec": 0,
+            "qUseThou": 0,
+            "qFmt": "M/D/YYYY"
+          },
+          "qIsAutoFormat": true,
+          "qGroupFieldDefs": [
+            "=Date([Est. time of arrival - Destination])"
+          ],
+          "qMin": 43831,
+          "qMax": 43861,
+          "qContinuousAxes": true,
+          "qAttrExprInfo": [],
+          "qAttrDimInfo": [],
+          "qCardinalities": {
+            "qCardinal": 124,
+            "qHypercubeCardinal": 25,
+            "qAllValuesCardinal": -1
+          },
+          "autoSort": true,
+          "cId": "WYfAdDe",
+          "othersLabel": "Others",
+          "textAlign": {
+            "auto": true,
+            "align": "left"
+          },
+          "representation": {
+            "type": "text",
+            "urlLabel": ""
+          }
+        },
+        {
+          "qFallbackTitle": "Actual time of arrival - Destination",
+          "qApprMaxGlyphCount": 10,
+          "qCardinal": 17,
+          "qSortIndicator": "A",
+          "qGroupFallbackTitles": [
+            "Actual time of arrival - Destination"
+          ],
+          "qGroupPos": 0,
+          "qStateCounts": {
+            "qLocked": 0,
+            "qSelected": 0,
+            "qOption": 12,
+            "qDeselected": 0,
+            "qAlternative": 0,
+            "qExcluded": 5,
+            "qSelectedExcluded": 0,
+            "qLockedExcluded": 0
+          },
+          "qTags": [
+            "$numeric",
+            "$integer",
+            "$timestamp",
+            "$date"
+          ],
+          "qDimensionType": "N",
+          "qGrouping": "N",
+          "qNumFormat": {
+            "qType": "D",
+            "qnDec": 0,
+            "qUseThou": 0,
+            "qFmt": "M/D/YYYY"
+          },
+          "qIsAutoFormat": true,
+          "qGroupFieldDefs": [
+            "=Date([Actual time of arrival - Destination])"
+          ],
+          "qMin": 43832,
+          "qMax": 43846,
+          "qAttrExprInfo": [],
+          "qAttrDimInfo": [],
+          "qCardinalities": {
+            "qCardinal": 17,
+            "qHypercubeCardinal": 13,
+            "qAllValuesCardinal": -1
+          },
+          "autoSort": true,
+          "cId": "ZfbyUw",
+          "othersLabel": "Others",
+          "textAlign": {
+            "auto": true,
+            "align": "left"
+          },
+          "representation": {
+            "type": "text",
+            "urlLabel": ""
+          }
+        }
+      ],
+      "qMeasureInfo": [
+        {
+          "qFallbackTitle": "# Of Days",
+          "qApprMaxGlyphCount": 2,
+          "qCardinal": 0,
+          "qSortIndicator": "D",
+          "qNumFormat": {
+            "qType": "F",
+            "qnDec": 2,
+            "qUseThou": 0,
+            "qFmt": "#,##0",
+            "qDec": ".",
+            "qThou": ","
+          },
+          "qMin": -1,
+          "qMax": 1,
+          "qAttrExprInfo": [],
+          "qAttrDimInfo": [],
+          "qTrendLines": [],
+          "autoSort": true,
+          "cId": "KwEjDr",
+          "numFormatFromTemplate": true,
+          "textAlign": {
+            "auto": true,
+            "align": "left"
+          },
+          "isCustomFormatted": false
+        },
+        {
+          "qFallbackTitle": "Status",
+          "qApprMaxGlyphCount": 4,
+          "qCardinal": 0,
+          "qSortIndicator": "D",
+          "qNumFormat": {
+            "qType": "U",
+            "qnDec": 0,
+            "qUseThou": 0
+          },
+          "qMin": "NaN",
+          "qMax": "NaN",
+          "qIsAutoFormat": true,
+          "qAttrExprInfo": [
+            {
+              "qMin": 4278222848,
+              "qMax": 4286578688,
+              "qFallbackTitle": "=if ( Date([Est. time of arrival - Destination]) + 3  < today ()  and isnull ([Actual time of arrival - Destination]), red() , green()) ",
+              "qMinText": "RGB(0,128,0)",
+              "qMaxText": "RGB(128,0,0)",
+              "qNumFormat": {
+                "qType": "U",
+                "qnDec": 10,
+                "qUseThou": 0
+              },
+              "id": "cellBackgroundColor"
+            }
+          ],
+          "qAttrDimInfo": [],
+          "qTrendLines": [],
+          "autoSort": true,
+          "cId": "FjAsDT",
+          "numFormatFromTemplate": true,
+          "textAlign": {
+            "auto": true,
+            "align": "left"
+          }
+        }
+      ],
+      "qEffectiveInterColumnSortOrder": [
+        7,
+        5,
+        3,
+        1,
+        4,
+        8,
+        6,
+        0,
+        2
+      ],
+      "qGrandTotalRow": [
+        {
+          "qText": "-",
+          "qNum": "NaN",
+          "qElemNumber": -1,
+          "qState": "X",
+          "qIsTotalCell": true
+        },
+        {
+          "qText": "-",
+          "qNum": "NaN",
+          "qElemNumber": -1,
+          "qState": "X",
+          "qIsTotalCell": true
+        }
+      ],
+      "qDataPages": [
+        {
+          "qMatrix": [
+            [
+              {
+                "qText": "PO-0000746-302",
+                "qNum": "NaN",
+                "qElemNumber": 307,
+                "qState": "O",
+                "qAttrExps": {
+                  "qValues": [
+                    {
+                      "qText": "RGB(128,0,0)",
+                      "qNum": 4286578688
+                    }
+                  ]
+                }
+              }
+            ],
+            [
+              {
+                "qText": "PO-0000745-302",
+                "qNum": "NaN",
+                "qElemNumber": 306,
+                "qState": "O",
+                "qAttrExps": {
+                  "qValues": [
+                    {
+                      "qText": "RGB(128,0,0)",
+                      "qNum": 4286578688
+                    }
+                  ]
+                }
+              }
+            ],
+            [
+              {
+                "qText": "PO-0000662-302",
+                "qNum": "NaN",
+                "qElemNumber": 253,
+                "qState": "O",
+                "qAttrExps": {
+                  "qValues": [
+                    {
+                      "qText": "RGB(128,0,0)",
+                      "qNum": 4286578688
+                    }
+                  ]
+                }
+              }
+            ],
+            [
+              {
+                "qText": "PO-0000663-302",
+                "qNum": "NaN",
+                "qElemNumber": 254,
+                "qState": "O",
+                "qAttrExps": {
+                  "qValues": [
+                    {
+                      "qText": "RGB(128,0,0)",
+                      "qNum": 4286578688
+                    }
+                  ]
+                }
+              }
+            ],
+            [
+              {
+                "qText": "PO-0000734-302",
+                "qNum": "NaN",
+                "qElemNumber": 295,
+                "qState": "O",
+                "qAttrExps": {
+                  "qValues": [
+                    {
+                      "qText": "RGB(128,0,0)",
+                      "qNum": 4286578688
+                    }
+                  ]
+                }
+              }
+            ],
+            [
+              {
+                "qText": "PO-0000735-302",
+                "qNum": "NaN",
+                "qElemNumber": 296,
+                "qState": "O",
+                "qAttrExps": {
+                  "qValues": [
+                    {
+                      "qText": "RGB(128,0,0)",
+                      "qNum": 4286578688
+                    }
+                  ]
+                }
+              }
+            ],
+            [
+              {
+                "qText": "PO-0000736-302",
+                "qNum": "NaN",
+                "qElemNumber": 297,
+                "qState": "O",
+                "qAttrExps": {
+                  "qValues": [
+                    {
+                      "qText": "RGB(128,0,0)",
+                      "qNum": 4286578688
+                    }
+                  ]
+                }
+              }
+            ],
+            [
+              {
+                "qText": "PO-0000737-302",
+                "qNum": "NaN",
+                "qElemNumber": 298,
+                "qState": "O",
+                "qAttrExps": {
+                  "qValues": [
+                    {
+                      "qText": "RGB(128,0,0)",
+                      "qNum": 4286578688
+                    }
+                  ]
+                }
+              }
+            ],
+            [
+              {
+                "qText": "PO-0000738-302",
+                "qNum": "NaN",
+                "qElemNumber": 299,
+                "qState": "O",
+                "qAttrExps": {
+                  "qValues": [
+                    {
+                      "qText": "RGB(128,0,0)",
+                      "qNum": 4286578688
+                    }
+                  ]
+                }
+              }
+            ],
+            [
+              {
+                "qText": "PO-0000739-302",
+                "qNum": "NaN",
+                "qElemNumber": 300,
+                "qState": "O",
+                "qAttrExps": {
+                  "qValues": [
+                    {
+                      "qText": "RGB(128,0,0)",
+                      "qNum": 4286578688
+                    }
+                  ]
+                }
+              }
+            ],
+            [
+              {
+                "qText": "PO-0000741-302",
+                "qNum": "NaN",
+                "qElemNumber": 302,
+                "qState": "O",
+                "qAttrExps": {
+                  "qValues": [
+                    {
+                      "qText": "RGB(128,0,0)",
+                      "qNum": 4286578688
+                    }
+                  ]
+                }
+              }
+            ],
+            [
+              {
+                "qText": "PO-0000742-302",
+                "qNum": "NaN",
+                "qElemNumber": 303,
+                "qState": "O",
+                "qAttrExps": {
+                  "qValues": [
+                    {
+                      "qText": "RGB(128,0,0)",
+                      "qNum": 4286578688
+                    }
+                  ]
+                }
+              }
+            ],
+            [
+              {
+                "qText": "PO-0000743-302",
+                "qNum": "NaN",
+                "qElemNumber": 304,
+                "qState": "O",
+                "qAttrExps": {
+                  "qValues": [
+                    {
+                      "qText": "RGB(128,0,0)",
+                      "qNum": 4286578688
+                    }
+                  ]
+                }
+              }
+            ],
+            [
+              {
+                "qText": "PO-0000744-302",
+                "qNum": "NaN",
+                "qElemNumber": 305,
+                "qState": "O",
+                "qAttrExps": {
+                  "qValues": [
+                    {
+                      "qText": "RGB(128,0,0)",
+                      "qNum": 4286578688
+                    }
+                  ]
+                }
+              }
+            ],
+            [
+              {
+                "qText": "PO-0000747-302",
+                "qNum": "NaN",
+                "qElemNumber": 308,
+                "qState": "O",
+                "qAttrExps": {
+                  "qValues": [
+                    {
+                      "qText": "RGB(128,0,0)",
+                      "qNum": 4286578688
+                    }
+                  ]
+                }
+              }
+            ],
+            [
+              {
+                "qText": "PO-0000812-302",
+                "qNum": "NaN",
+                "qElemNumber": 345,
+                "qState": "O",
+                "qAttrExps": {
+                  "qValues": [
+                    {
+                      "qText": "RGB(128,0,0)",
+                      "qNum": 4286578688
+                    }
+                  ]
+                }
+              }
+            ],
+            [
+              {
+                "qText": "PO-0000801-302",
+                "qNum": "NaN",
+                "qElemNumber": 343,
+                "qState": "O",
+                "qAttrExps": {
+                  "qValues": [
+                    {
+                      "qText": "RGB(128,0,0)",
+                      "qNum": 4286578688
+                    }
+                  ]
+                }
+              }
+            ],
+            [
+              {
+                "qText": "PO-0000730-302",
+                "qNum": "NaN",
+                "qElemNumber": 277,
+                "qState": "O",
+                "qAttrExps": {
+                  "qValues": [
+                    {
+                      "qText": "RGB(128,0,0)",
+                      "qNum": 4286578688
+                    }
+                  ]
+                }
+              }
+            ]
+          ],
+          "qTails": [],
+          "qArea": {
+            "qLeft": 0,
+            "qTop": 19,
+            "qWidth": 1,
+            "qHeight": 18
+          }
+        },
+        {
+          "qMatrix": [
+            [
+              {
+                "qText": "Napco Packaging Systems Co. Ltd. (Uniplast) شركة نابكو لانتاج مواد التعبئة المحدودة",
+                "qNum": "NaN",
+                "qElemNumber": 1,
+                "qState": "O"
+              }
+            ],
+            [
+              {
+                "qText": "Napco Packaging Systems Co. Ltd. (Uniplast) شركة نابكو لانتاج مواد التعبئة المحدودة",
+                "qNum": "NaN",
+                "qElemNumber": 1,
+                "qState": "O"
+              }
+            ],
+            [
+              {
+                "qText": "Napco Packaging Systems Co. Ltd. (Uniplast) شركة نابكو لانتاج مواد التعبئة المحدودة",
+                "qNum": "NaN",
+                "qElemNumber": 1,
+                "qState": "O"
+              }
+            ],
+            [
+              {
+                "qText": "Napco Packaging Systems Co. Ltd. (Uniplast) شركة نابكو لانتاج مواد التعبئة المحدودة",
+                "qNum": "NaN",
+                "qElemNumber": 1,
+                "qState": "O"
+              }
+            ],
+            [
+              {
+                "qText": "Napco Packaging Systems Co. Ltd. (Uniplast) شركة نابكو لانتاج مواد التعبئة المحدودة",
+                "qNum": "NaN",
+                "qElemNumber": 1,
+                "qState": "O"
+              }
+            ],
+            [
+              {
+                "qText": "Napco Packaging Systems Co. Ltd. (Uniplast) شركة نابكو لانتاج مواد التعبئة المحدودة",
+                "qNum": "NaN",
+                "qElemNumber": 1,
+                "qState": "O"
+              }
+            ],
+            [
+              {
+                "qText": "Napco Packaging Systems Co. Ltd. (Uniplast) شركة نابكو لانتاج مواد التعبئة المحدودة",
+                "qNum": "NaN",
+                "qElemNumber": 1,
+                "qState": "O"
+              }
+            ],
+            [
+              {
+                "qText": "Napco Packaging Systems Co. Ltd. (Uniplast) شركة نابكو لانتاج مواد التعبئة المحدودة",
+                "qNum": "NaN",
+                "qElemNumber": 1,
+                "qState": "O"
+              }
+            ],
+            [
+              {
+                "qText": "Napco Packaging Systems Co. Ltd. (Uniplast) شركة نابكو لانتاج مواد التعبئة المحدودة",
+                "qNum": "NaN",
+                "qElemNumber": 1,
+                "qState": "O"
+              }
+            ],
+            [
+              {
+                "qText": "Napco Packaging Systems Co. Ltd. (Uniplast) شركة نابكو لانتاج مواد التعبئة المحدودة",
+                "qNum": "NaN",
+                "qElemNumber": 1,
+                "qState": "O"
+              }
+            ],
+            [
+              {
+                "qText": "Napco Packaging Systems Co. Ltd. (Uniplast) شركة نابكو لانتاج مواد التعبئة المحدودة",
+                "qNum": "NaN",
+                "qElemNumber": 1,
+                "qState": "O"
+              }
+            ],
+            [
+              {
+                "qText": "Napco Packaging Systems Co. Ltd. (Uniplast) شركة نابكو لانتاج مواد التعبئة المحدودة",
+                "qNum": "NaN",
+                "qElemNumber": 1,
+                "qState": "O"
+              }
+            ],
+            [
+              {
+                "qText": "Napco Packaging Systems Co. Ltd. (Uniplast) شركة نابكو لانتاج مواد التعبئة المحدودة",
+                "qNum": "NaN",
+                "qElemNumber": 1,
+                "qState": "O"
+              }
+            ],
+            [
+              {
+                "qText": "Napco Packaging Systems Co. Ltd. (Uniplast) شركة نابكو لانتاج مواد التعبئة المحدودة",
+                "qNum": "NaN",
+                "qElemNumber": 1,
+                "qState": "O"
+              }
+            ],
+            [
+              {
+                "qText": "Napco Packaging Systems Co. Ltd. (Uniplast) شركة نابكو لانتاج مواد التعبئة المحدودة",
+                "qNum": "NaN",
+                "qElemNumber": 1,
+                "qState": "O"
+              }
+            ],
+            [
+              {
+                "qText": "Napco Packaging Systems Co. Ltd. (Uniplast) شركة نابكو لانتاج مواد التعبئة المحدودة",
+                "qNum": "NaN",
+                "qElemNumber": 1,
+                "qState": "O"
+              }
+            ],
+            [
+              {
+                "qText": "Napco UPPC Hygiene",
+                "qNum": "NaN",
+                "qElemNumber": 0,
+                "qState": "O"
+              }
+            ],
+            [
+              {
+                "qText": "Napco UPPC Hygiene",
+                "qNum": "NaN",
+                "qElemNumber": 0,
+                "qState": "O"
+              }
+            ]
+          ],
+          "qTails": [],
+          "qArea": {
+            "qLeft": 1,
+            "qTop": 19,
+            "qWidth": 1,
+            "qHeight": 18
+          }
+        },
+        {
+          "qMatrix": [
+            [
+              {
+                "qText": "BAFCO INTERNATIONAL SHIPPING & LOGISTICS CO. LTD",
+                "qNum": "NaN",
+                "qElemNumber": 3,
+                "qState": "O"
+              }
+            ],
+            [
+              {
+                "qText": "BAFCO INTERNATIONAL SHIPPING & LOGISTICS CO. LTD",
+                "qNum": "NaN",
+                "qElemNumber": 3,
+                "qState": "O"
+              }
+            ],
+            [
+              {
+                "qText": "BAFCO INTERNATIONAL SHIPPING & LOGISTICS CO. LTD",
+                "qNum": "NaN",
+                "qElemNumber": 3,
+                "qState": "O"
+              }
+            ],
+            [
+              {
+                "qText": "BAFCO INTERNATIONAL SHIPPING & LOGISTICS CO. LTD",
+                "qNum": "NaN",
+                "qElemNumber": 3,
+                "qState": "O"
+              }
+            ],
+            [
+              {
+                "qText": "AL KARSF TRADING CO.",
+                "qNum": "NaN",
+                "qElemNumber": 2,
+                "qState": "O"
+              }
+            ],
+            [
+              {
+                "qText": "AL KARSF TRADING CO.",
+                "qNum": "NaN",
+                "qElemNumber": 2,
+                "qState": "O"
+              }
+            ],
+            [
+              {
+                "qText": "AL KARSF TRADING CO.",
+                "qNum": "NaN",
+                "qElemNumber": 2,
+                "qState": "O"
+              }
+            ],
+            [
+              {
+                "qText": "AL KARSF TRADING CO.",
+                "qNum": "NaN",
+                "qElemNumber": 2,
+                "qState": "O"
+              }
+            ],
+            [
+              {
+                "qText": "AL KARSF TRADING CO.",
+                "qNum": "NaN",
+                "qElemNumber": 2,
+                "qState": "O"
+              }
+            ],
+            [
+              {
+                "qText": "AL KARSF TRADING CO.",
+                "qNum": "NaN",
+                "qElemNumber": 2,
+                "qState": "O"
+              }
+            ],
+            [
+              {
+                "qText": "ATLAS OCEAN CO. LTD.",
+                "qNum": "NaN",
+                "qElemNumber": 0,
+                "qState": "O"
+              }
+            ],
+            [
+              {
+                "qText": "ATLAS OCEAN CO. LTD.",
+                "qNum": "NaN",
+                "qElemNumber": 0,
+                "qState": "O"
+              }
+            ],
+            [
+              {
+                "qText": "ATLAS OCEAN CO. LTD.",
+                "qNum": "NaN",
+                "qElemNumber": 0,
+                "qState": "O"
+              }
+            ],
+            [
+              {
+                "qText": "ATLAS OCEAN CO. LTD.",
+                "qNum": "NaN",
+                "qElemNumber": 0,
+                "qState": "O"
+              }
+            ],
+            [
+              {
+                "qText": "BAFCO INTERNATIONAL SHIPPING & LOGISTICS CO. LTD",
+                "qNum": "NaN",
+                "qElemNumber": 3,
+                "qState": "O"
+              }
+            ],
+            [
+              {
+                "qText": "BAFCO INTERNATIONAL SHIPPING & LOGISTICS CO. LTD",
+                "qNum": "NaN",
+                "qElemNumber": 3,
+                "qState": "O"
+              }
+            ],
+            [
+              {
+                "qText": "ATLAS OCEAN CO. LTD.",
+                "qNum": "NaN",
+                "qElemNumber": 0,
+                "qState": "O"
+              }
+            ],
+            [
+              {
+                "qText": "CEDAR TRANS",
+                "qNum": "NaN",
+                "qElemNumber": 6,
+                "qState": "O"
+              }
+            ]
+          ],
+          "qTails": [],
+          "qArea": {
+            "qLeft": 2,
+            "qTop": 19,
+            "qWidth": 1,
+            "qHeight": 18
+          }
+        },
+        {
+          "qMatrix": [
+            [
+              {
+                "qText": "NAVIOS UNISON / 9345W",
+                "qNum": "NaN",
+                "qElemNumber": 105,
+                "qState": "O"
+              }
+            ],
+            [
+              {
+                "qText": "NAVIOS UNISON / 9345W",
+                "qNum": "NaN",
+                "qElemNumber": 105,
+                "qState": "O"
+              }
+            ],
+            [
+              {
+                "qText": "NAVIOS UNISON / 9345W",
+                "qNum": "NaN",
+                "qElemNumber": 105,
+                "qState": "O"
+              }
+            ],
+            [
+              {
+                "qText": "NAVIOS UNISON / 9345W",
+                "qNum": "NaN",
+                "qElemNumber": 105,
+                "qState": "O"
+              }
+            ],
+            [
+              {
+                "qText": "NAVIOS UNISON / 9345W",
+                "qNum": "NaN",
+                "qElemNumber": 105,
+                "qState": "O"
+              }
+            ],
+            [
+              {
+                "qText": "NAVIOS UNISON / 9345W",
+                "qNum": "NaN",
+                "qElemNumber": 105,
+                "qState": "O"
+              }
+            ],
+            [
+              {
+                "qText": "NAVIOS UNISON / 9345W",
+                "qNum": "NaN",
+                "qElemNumber": 105,
+                "qState": "O"
+              }
+            ],
+            [
+              {
+                "qText": "NAVIOS UNISON / 9345W",
+                "qNum": "NaN",
+                "qElemNumber": 105,
+                "qState": "O"
+              }
+            ],
+            [
+              {
+                "qText": "NAVIOS UNISON / 9345W",
+                "qNum": "NaN",
+                "qElemNumber": 105,
+                "qState": "O"
+              }
+            ],
+            [
+              {
+                "qText": "NAVIOS UNISON / 9345W",
+                "qNum": "NaN",
+                "qElemNumber": 105,
+                "qState": "O"
+              }
+            ],
+            [
+              {
+                "qText": "NAVIOS UNISON / 9345W",
+                "qNum": "NaN",
+                "qElemNumber": 105,
+                "qState": "O"
+              }
+            ],
+            [
+              {
+                "qText": "NAVIOS UNISON / 9345W",
+                "qNum": "NaN",
+                "qElemNumber": 105,
+                "qState": "O"
+              }
+            ],
+            [
+              {
+                "qText": "NAVIOS UNISON / 9345W",
+                "qNum": "NaN",
+                "qElemNumber": 105,
+                "qState": "O"
+              }
+            ],
+            [
+              {
+                "qText": "NAVIOS UNISON / 9345W",
+                "qNum": "NaN",
+                "qElemNumber": 105,
+                "qState": "O"
+              }
+            ],
+            [
+              {
+                "qText": "NAVIOS UNISON / 9345W",
+                "qNum": "NaN",
+                "qElemNumber": 105,
+                "qState": "O"
+              }
+            ],
+            [
+              {
+                "qText": "NINGBO EXPRESS / 1949W",
+                "qNum": "NaN",
+                "qElemNumber": 150,
+                "qState": "O"
+              }
+            ],
+            [
+              {
+                "qText": "AMOLIANI",
+                "qNum": "NaN",
+                "qElemNumber": 148,
+                "qState": "O"
+              }
+            ],
+            [
+              {
+                "qText": "MAYSSAN",
+                "qNum": "NaN",
+                "qElemNumber": 39,
+                "qState": "O"
+              }
+            ]
+          ],
+          "qTails": [],
+          "qArea": {
+            "qLeft": 3,
+            "qTop": 19,
+            "qWidth": 1,
+            "qHeight": 18
+          }
+        },
+        {
+          "qMatrix": [
+            [
+              {
+                "qText": "HLCUJE2191201032",
+                "qNum": "NaN",
+                "qElemNumber": 151,
+                "qState": "O"
+              }
+            ],
+            [
+              {
+                "qText": "HLCUJE2191128354",
+                "qNum": "NaN",
+                "qElemNumber": 150,
+                "qState": "O"
+              }
+            ],
+            [
+              {
+                "qText": "-",
+                "qNum": "NaN",
+                "qElemNumber": -2,
+                "qState": "L",
+                "qIsNull": true
+              }
+            ],
+            [
+              {
+                "qText": "-",
+                "qNum": "NaN",
+                "qElemNumber": -2,
+                "qState": "L",
+                "qIsNull": true
+              }
+            ],
+            [
+              {
+                "qText": "-",
+                "qNum": "NaN",
+                "qElemNumber": -2,
+                "qState": "L",
+                "qIsNull": true
+              }
+            ],
+            [
+              {
+                "qText": "-",
+                "qNum": "NaN",
+                "qElemNumber": -2,
+                "qState": "L",
+                "qIsNull": true
+              }
+            ],
+            [
+              {
+                "qText": "-",
+                "qNum": "NaN",
+                "qElemNumber": -2,
+                "qState": "L",
+                "qIsNull": true
+              }
+            ],
+            [
+              {
+                "qText": "-",
+                "qNum": "NaN",
+                "qElemNumber": -2,
+                "qState": "L",
+                "qIsNull": true
+              }
+            ],
+            [
+              {
+                "qText": "-",
+                "qNum": "NaN",
+                "qElemNumber": -2,
+                "qState": "L",
+                "qIsNull": true
+              }
+            ],
+            [
+              {
+                "qText": "-",
+                "qNum": "NaN",
+                "qElemNumber": -2,
+                "qState": "L",
+                "qIsNull": true
+              }
+            ],
+            [
+              {
+                "qText": "-",
+                "qNum": "NaN",
+                "qElemNumber": -2,
+                "qState": "L",
+                "qIsNull": true
+              }
+            ],
+            [
+              {
+                "qText": "-",
+                "qNum": "NaN",
+                "qElemNumber": -2,
+                "qState": "L",
+                "qIsNull": true
+              }
+            ],
+            [
+              {
+                "qText": "-",
+                "qNum": "NaN",
+                "qElemNumber": -2,
+                "qState": "L",
+                "qIsNull": true
+              }
+            ],
+            [
+              {
+                "qText": "-",
+                "qNum": "NaN",
+                "qElemNumber": -2,
+                "qState": "L",
+                "qIsNull": true
+              }
+            ],
+            [
+              {
+                "qText": "-",
+                "qNum": "NaN",
+                "qElemNumber": -2,
+                "qState": "L",
+                "qIsNull": true
+              }
+            ],
+            [
+              {
+                "qText": "-",
+                "qNum": "NaN",
+                "qElemNumber": -2,
+                "qState": "L",
+                "qIsNull": true
+              }
+            ],
+            [
+              {
+                "qText": "-",
+                "qNum": "NaN",
+                "qElemNumber": -2,
+                "qState": "L",
+                "qIsNull": true
+              }
+            ],
+            [
+              {
+                "qText": "JED0158349",
+                "qNum": "NaN",
+                "qElemNumber": 135,
+                "qState": "O"
+              }
+            ]
+          ],
+          "qTails": [],
+          "qArea": {
+            "qLeft": 4,
+            "qTop": 19,
+            "qWidth": 1,
+            "qHeight": 18
+          }
+        },
+        {
+          "qMatrix": [
+            [
+              {
+                "qText": "1/5/2020",
+                "qNum": 43835,
+                "qElemNumber": 64,
+                "qState": "O"
+              }
+            ],
+            [
+              {
+                "qText": "1/5/2020",
+                "qNum": 43835,
+                "qElemNumber": 64,
+                "qState": "O"
+              }
+            ],
+            [
+              {
+                "qText": "1/5/2020",
+                "qNum": 43835,
+                "qElemNumber": 64,
+                "qState": "O"
+              }
+            ],
+            [
+              {
+                "qText": "1/5/2020",
+                "qNum": 43835,
+                "qElemNumber": 64,
+                "qState": "O"
+              }
+            ],
+            [
+              {
+                "qText": "1/5/2020",
+                "qNum": 43835,
+                "qElemNumber": 64,
+                "qState": "O"
+              }
+            ],
+            [
+              {
+                "qText": "1/5/2020",
+                "qNum": 43835,
+                "qElemNumber": 64,
+                "qState": "O"
+              }
+            ],
+            [
+              {
+                "qText": "1/5/2020",
+                "qNum": 43835,
+                "qElemNumber": 64,
+                "qState": "O"
+              }
+            ],
+            [
+              {
+                "qText": "1/5/2020",
+                "qNum": 43835,
+                "qElemNumber": 64,
+                "qState": "O"
+              }
+            ],
+            [
+              {
+                "qText": "1/5/2020",
+                "qNum": 43835,
+                "qElemNumber": 64,
+                "qState": "O"
+              }
+            ],
+            [
+              {
+                "qText": "1/5/2020",
+                "qNum": 43835,
+                "qElemNumber": 64,
+                "qState": "O"
+              }
+            ],
+            [
+              {
+                "qText": "1/5/2020",
+                "qNum": 43835,
+                "qElemNumber": 64,
+                "qState": "O"
+              }
+            ],
+            [
+              {
+                "qText": "1/5/2020",
+                "qNum": 43835,
+                "qElemNumber": 64,
+                "qState": "O"
+              }
+            ],
+            [
+              {
+                "qText": "1/5/2020",
+                "qNum": 43835,
+                "qElemNumber": 64,
+                "qState": "O"
+              }
+            ],
+            [
+              {
+                "qText": "1/5/2020",
+                "qNum": 43835,
+                "qElemNumber": 64,
+                "qState": "O"
+              }
+            ],
+            [
+              {
+                "qText": "1/5/2020",
+                "qNum": 43835,
+                "qElemNumber": 64,
+                "qState": "O"
+              }
+            ],
+            [
+              {
+                "qText": "1/6/2020",
+                "qNum": 43836,
+                "qElemNumber": 87,
+                "qState": "O"
+              }
+            ],
+            [
+              {
+                "qText": "1/7/2020",
+                "qNum": 43837,
+                "qElemNumber": 73,
+                "qState": "O"
+              }
+            ],
+            [
+              {
+                "qText": "1/7/2020",
+                "qNum": 43837,
+                "qElemNumber": 73,
+                "qState": "O"
+              }
+            ]
+          ],
+          "qTails": [],
+          "qArea": {
+            "qLeft": 5,
+            "qTop": 19,
+            "qWidth": 1,
+            "qHeight": 18
+          }
+        },
+        {
+          "qMatrix": [
+            [
+              {
+                "qText": "-",
+                "qNum": "NaN",
+                "qElemNumber": -2,
+                "qState": "L",
+                "qIsNull": true
+              }
+            ],
+            [
+              {
+                "qText": "-",
+                "qNum": "NaN",
+                "qElemNumber": -2,
+                "qState": "L",
+                "qIsNull": true
+              }
+            ],
+            [
+              {
+                "qText": "-",
+                "qNum": "NaN",
+                "qElemNumber": -2,
+                "qState": "L",
+                "qIsNull": true
+              }
+            ],
+            [
+              {
+                "qText": "-",
+                "qNum": "NaN",
+                "qElemNumber": -2,
+                "qState": "L",
+                "qIsNull": true
+              }
+            ],
+            [
+              {
+                "qText": "-",
+                "qNum": "NaN",
+                "qElemNumber": -2,
+                "qState": "L",
+                "qIsNull": true
+              }
+            ],
+            [
+              {
+                "qText": "-",
+                "qNum": "NaN",
+                "qElemNumber": -2,
+                "qState": "L",
+                "qIsNull": true
+              }
+            ],
+            [
+              {
+                "qText": "-",
+                "qNum": "NaN",
+                "qElemNumber": -2,
+                "qState": "L",
+                "qIsNull": true
+              }
+            ],
+            [
+              {
+                "qText": "-",
+                "qNum": "NaN",
+                "qElemNumber": -2,
+                "qState": "L",
+                "qIsNull": true
+              }
+            ],
+            [
+              {
+                "qText": "-",
+                "qNum": "NaN",
+                "qElemNumber": -2,
+                "qState": "L",
+                "qIsNull": true
+              }
+            ],
+            [
+              {
+                "qText": "-",
+                "qNum": "NaN",
+                "qElemNumber": -2,
+                "qState": "L",
+                "qIsNull": true
+              }
+            ],
+            [
+              {
+                "qText": "-",
+                "qNum": "NaN",
+                "qElemNumber": -2,
+                "qState": "L",
+                "qIsNull": true
+              }
+            ],
+            [
+              {
+                "qText": "-",
+                "qNum": "NaN",
+                "qElemNumber": -2,
+                "qState": "L",
+                "qIsNull": true
+              }
+            ],
+            [
+              {
+                "qText": "-",
+                "qNum": "NaN",
+                "qElemNumber": -2,
+                "qState": "L",
+                "qIsNull": true
+              }
+            ],
+            [
+              {
+                "qText": "-",
+                "qNum": "NaN",
+                "qElemNumber": -2,
+                "qState": "L",
+                "qIsNull": true
+              }
+            ],
+            [
+              {
+                "qText": "-",
+                "qNum": "NaN",
+                "qElemNumber": -2,
+                "qState": "L",
+                "qIsNull": true
+              }
+            ],
+            [
+              {
+                "qText": "-",
+                "qNum": "NaN",
+                "qElemNumber": -2,
+                "qState": "L",
+                "qIsNull": true
+              }
+            ],
+            [
+              {
+                "qText": "-",
+                "qNum": "NaN",
+                "qElemNumber": -2,
+                "qState": "L",
+                "qIsNull": true
+              }
+            ],
+            [
+              {
+                "qText": "-",
+                "qNum": "NaN",
+                "qElemNumber": -2,
+                "qState": "L",
+                "qIsNull": true
+              }
+            ]
+          ],
+          "qTails": [],
+          "qArea": {
+            "qLeft": 6,
+            "qTop": 19,
+            "qWidth": 1,
+            "qHeight": 18
+          }
+        },
+        {
+          "qMatrix": [
+            [
+              {
+                "qText": "-",
+                "qNum": "NaN",
+                "qElemNumber": 0,
+                "qState": "L",
+                "qIsNull": true
+              }
+            ],
+            [
+              {
+                "qText": "-",
+                "qNum": "NaN",
+                "qElemNumber": 0,
+                "qState": "L",
+                "qIsNull": true
+              }
+            ],
+            [
+              {
+                "qText": "-",
+                "qNum": "NaN",
+                "qElemNumber": 0,
+                "qState": "L",
+                "qIsNull": true
+              }
+            ],
+            [
+              {
+                "qText": "-",
+                "qNum": "NaN",
+                "qElemNumber": 0,
+                "qState": "L",
+                "qIsNull": true
+              }
+            ],
+            [
+              {
+                "qText": "-",
+                "qNum": "NaN",
+                "qElemNumber": 0,
+                "qState": "L",
+                "qIsNull": true
+              }
+            ],
+            [
+              {
+                "qText": "-",
+                "qNum": "NaN",
+                "qElemNumber": 0,
+                "qState": "L",
+                "qIsNull": true
+              }
+            ],
+            [
+              {
+                "qText": "-",
+                "qNum": "NaN",
+                "qElemNumber": 0,
+                "qState": "L",
+                "qIsNull": true
+              }
+            ],
+            [
+              {
+                "qText": "-",
+                "qNum": "NaN",
+                "qElemNumber": 0,
+                "qState": "L",
+                "qIsNull": true
+              }
+            ],
+            [
+              {
+                "qText": "-",
+                "qNum": "NaN",
+                "qElemNumber": 0,
+                "qState": "L",
+                "qIsNull": true
+              }
+            ],
+            [
+              {
+                "qText": "-",
+                "qNum": "NaN",
+                "qElemNumber": 0,
+                "qState": "L",
+                "qIsNull": true
+              }
+            ],
+            [
+              {
+                "qText": "-",
+                "qNum": "NaN",
+                "qElemNumber": 0,
+                "qState": "L",
+                "qIsNull": true
+              }
+            ],
+            [
+              {
+                "qText": "-",
+                "qNum": "NaN",
+                "qElemNumber": 0,
+                "qState": "L",
+                "qIsNull": true
+              }
+            ],
+            [
+              {
+                "qText": "-",
+                "qNum": "NaN",
+                "qElemNumber": 0,
+                "qState": "L",
+                "qIsNull": true
+              }
+            ],
+            [
+              {
+                "qText": "-",
+                "qNum": "NaN",
+                "qElemNumber": 0,
+                "qState": "L",
+                "qIsNull": true
+              }
+            ],
+            [
+              {
+                "qText": "-",
+                "qNum": "NaN",
+                "qElemNumber": 0,
+                "qState": "L",
+                "qIsNull": true
+              }
+            ],
+            [
+              {
+                "qText": "-",
+                "qNum": "NaN",
+                "qElemNumber": 0,
+                "qState": "L",
+                "qIsNull": true
+              }
+            ],
+            [
+              {
+                "qText": "-",
+                "qNum": "NaN",
+                "qElemNumber": 0,
+                "qState": "L",
+                "qIsNull": true
+              }
+            ],
+            [
+              {
+                "qText": "-",
+                "qNum": "NaN",
+                "qElemNumber": 0,
+                "qState": "L",
+                "qIsNull": true
+              }
+            ]
+          ],
+          "qTails": [],
+          "qArea": {
+            "qLeft": 7,
+            "qTop": 19,
+            "qWidth": 1,
+            "qHeight": 18
+          }
+        },
+        {
+          "qMatrix": [
+            [
+              {
+                "qText": "MISS",
+                "qNum": "NaN",
+                "qElemNumber": 0,
+                "qState": "L",
+                "qAttrExps": {
+                  "qValues": [
+                    {
+                      "qText": "RGB(128,0,0)",
+                      "qNum": 4286578688
+                    }
+                  ]
+                }
+              }
+            ],
+            [
+              {
+                "qText": "MISS",
+                "qNum": "NaN",
+                "qElemNumber": 0,
+                "qState": "L",
+                "qAttrExps": {
+                  "qValues": [
+                    {
+                      "qText": "RGB(128,0,0)",
+                      "qNum": 4286578688
+                    }
+                  ]
+                }
+              }
+            ],
+            [
+              {
+                "qText": "MISS",
+                "qNum": "NaN",
+                "qElemNumber": 0,
+                "qState": "L",
+                "qAttrExps": {
+                  "qValues": [
+                    {
+                      "qText": "RGB(128,0,0)",
+                      "qNum": 4286578688
+                    }
+                  ]
+                }
+              }
+            ],
+            [
+              {
+                "qText": "MISS",
+                "qNum": "NaN",
+                "qElemNumber": 0,
+                "qState": "L",
+                "qAttrExps": {
+                  "qValues": [
+                    {
+                      "qText": "RGB(128,0,0)",
+                      "qNum": 4286578688
+                    }
+                  ]
+                }
+              }
+            ],
+            [
+              {
+                "qText": "MISS",
+                "qNum": "NaN",
+                "qElemNumber": 0,
+                "qState": "L",
+                "qAttrExps": {
+                  "qValues": [
+                    {
+                      "qText": "RGB(128,0,0)",
+                      "qNum": 4286578688
+                    }
+                  ]
+                }
+              }
+            ],
+            [
+              {
+                "qText": "MISS",
+                "qNum": "NaN",
+                "qElemNumber": 0,
+                "qState": "L",
+                "qAttrExps": {
+                  "qValues": [
+                    {
+                      "qText": "RGB(128,0,0)",
+                      "qNum": 4286578688
+                    }
+                  ]
+                }
+              }
+            ],
+            [
+              {
+                "qText": "MISS",
+                "qNum": "NaN",
+                "qElemNumber": 0,
+                "qState": "L",
+                "qAttrExps": {
+                  "qValues": [
+                    {
+                      "qText": "RGB(128,0,0)",
+                      "qNum": 4286578688
+                    }
+                  ]
+                }
+              }
+            ],
+            [
+              {
+                "qText": "MISS",
+                "qNum": "NaN",
+                "qElemNumber": 0,
+                "qState": "L",
+                "qAttrExps": {
+                  "qValues": [
+                    {
+                      "qText": "RGB(128,0,0)",
+                      "qNum": 4286578688
+                    }
+                  ]
+                }
+              }
+            ],
+            [
+              {
+                "qText": "MISS",
+                "qNum": "NaN",
+                "qElemNumber": 0,
+                "qState": "L",
+                "qAttrExps": {
+                  "qValues": [
+                    {
+                      "qText": "RGB(128,0,0)",
+                      "qNum": 4286578688
+                    }
+                  ]
+                }
+              }
+            ],
+            [
+              {
+                "qText": "MISS",
+                "qNum": "NaN",
+                "qElemNumber": 0,
+                "qState": "L",
+                "qAttrExps": {
+                  "qValues": [
+                    {
+                      "qText": "RGB(128,0,0)",
+                      "qNum": 4286578688
+                    }
+                  ]
+                }
+              }
+            ],
+            [
+              {
+                "qText": "MISS",
+                "qNum": "NaN",
+                "qElemNumber": 0,
+                "qState": "L",
+                "qAttrExps": {
+                  "qValues": [
+                    {
+                      "qText": "RGB(128,0,0)",
+                      "qNum": 4286578688
+                    }
+                  ]
+                }
+              }
+            ],
+            [
+              {
+                "qText": "MISS",
+                "qNum": "NaN",
+                "qElemNumber": 0,
+                "qState": "L",
+                "qAttrExps": {
+                  "qValues": [
+                    {
+                      "qText": "RGB(128,0,0)",
+                      "qNum": 4286578688
+                    }
+                  ]
+                }
+              }
+            ],
+            [
+              {
+                "qText": "MISS",
+                "qNum": "NaN",
+                "qElemNumber": 0,
+                "qState": "L",
+                "qAttrExps": {
+                  "qValues": [
+                    {
+                      "qText": "RGB(128,0,0)",
+                      "qNum": 4286578688
+                    }
+                  ]
+                }
+              }
+            ],
+            [
+              {
+                "qText": "MISS",
+                "qNum": "NaN",
+                "qElemNumber": 0,
+                "qState": "L",
+                "qAttrExps": {
+                  "qValues": [
+                    {
+                      "qText": "RGB(128,0,0)",
+                      "qNum": 4286578688
+                    }
+                  ]
+                }
+              }
+            ],
+            [
+              {
+                "qText": "MISS",
+                "qNum": "NaN",
+                "qElemNumber": 0,
+                "qState": "L",
+                "qAttrExps": {
+                  "qValues": [
+                    {
+                      "qText": "RGB(128,0,0)",
+                      "qNum": 4286578688
+                    }
+                  ]
+                }
+              }
+            ],
+            [
+              {
+                "qText": "MISS",
+                "qNum": "NaN",
+                "qElemNumber": 0,
+                "qState": "L",
+                "qAttrExps": {
+                  "qValues": [
+                    {
+                      "qText": "RGB(128,0,0)",
+                      "qNum": 4286578688
+                    }
+                  ]
+                }
+              }
+            ],
+            [
+              {
+                "qText": "MISS",
+                "qNum": "NaN",
+                "qElemNumber": 0,
+                "qState": "L",
+                "qAttrExps": {
+                  "qValues": [
+                    {
+                      "qText": "RGB(128,0,0)",
+                      "qNum": 4286578688
+                    }
+                  ]
+                }
+              }
+            ],
+            [
+              {
+                "qText": "MISS",
+                "qNum": "NaN",
+                "qElemNumber": 0,
+                "qState": "L",
+                "qAttrExps": {
+                  "qValues": [
+                    {
+                      "qText": "RGB(128,0,0)",
+                      "qNum": 4286578688
+                    }
+                  ]
+                }
+              }
+            ]
+          ],
+          "qTails": [],
+          "qArea": {
+            "qLeft": 8,
+            "qTop": 19,
+            "qWidth": 1,
+            "qHeight": 18
+          }
+        }
+      ],
+      "qPivotDataPages": [],
+      "qStackedDataPages": [],
+      "qMode": "S",
+      "qNoOfLeftDims": -1,
+      "qTreeNodesOnDim": [],
+      "qColumnOrder": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "columnOrder": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "columnWidths": [
+        120,
+        323,
+        288,
+        226,
+        151,
+        144,
+        123,
+        -1,
+        -1
+      ]
+    },
+    "showTitles": true,
+    "title": "",
+    "subtitle": "",
+    "footnote": "",
+    "showDetails": false,
+    "visualization": "table",
+    "totals": {
+      "show": true,
+      "position": "noTotals",
+      "label": "Totals"
+    },
+    "scrolling": {
+      "keepFirstColumnInView": false,
+      "horizontal": true
+    },
+    "multiline": {
+      "wrapTextInHeaders": true,
+      "wrapTextInCells": true
+    },
+    "snapshotData": {
+      "object": {
+        "size": {
+          "w": 2028,
+          "h": 748
+        }
+      },
+      "rtl": false,
+      "parent": {
+        "h": 883.2,
+        "w": 2048
+      }
+    },
+    "visualizationType": "table",
+    "sourceObjectId": "b4c1d38c-857e-499c-b905-efe6dd7bb27a",
+    "sheetId": "a7265727-5a90-416a-806a-c49a385cdc3e",
+    "timestamp": 1579611730305,
+    "isClone": false,
+    "supportExport": true
+  }
+]

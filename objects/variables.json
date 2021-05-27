@@ -1,0 +1,1067 @@
+[
+  {
+    "qInfo": {
+      "qId": "00121f1a-6f69-4e23-b421-a28bdd85b1b5",
+      "qType": "variable"
+    },
+    "qMetaDef": {},
+    "qName": "v_Selected_Measure_Overview",
+    "qNumberPresentation": {
+      "qType": "U",
+      "qnDec": 10,
+      "qUseThou": 0
+    },
+    "qDefinition": "1",
+    "tags": []
+  },
+  {
+    "qInfo": {
+      "qId": "037c7c4c-c057-4e97-90b8-1fdae0e3fff6",
+      "qType": "variable"
+    },
+    "qMetaDef": {},
+    "qName": "v_PENDING_SEA",
+    "qNumberPresentation": {
+      "qType": "U",
+      "qnDec": 10,
+      "qUseThou": 0
+    },
+    "qDefinition": "count({< $(v_Switch_Option_Month_YTD_Filter_SEA) ,  [Freight Type] = {'SEA'}  >} distinct     [Waybill Number])\r\n\n-\n\n(\n\ncount (  aggr (   if ( $(v_Number_Of_Days_SEA) < 4 , 1) , [Waybill Number] )) \n\n+\ncount (  aggr (  \n\tif ( $(v_Number_Of_Days_SEA) >= 4 , '1' ,\n    if ( Date(    only({<$(v_Switch_Option_Month_YTD_Filter_SEA) >} [Est. time of arrival - Destination - SEA])) + 4  < today ()  \n    \tand isnull (    only({< $(v_Switch_Option_Month_YTD_Filter_SEA) >}[Actual time of arrival - Destination - SEA])) , '1') ) ,[Waybill Number]) )\n    \n    \n    \n)",
+    "tags": []
+  },
+  {
+    "qInfo": {
+      "qId": "07274096-9d0a-476e-898d-29c564967b78",
+      "qType": "variable"
+    },
+    "qMetaDef": {},
+    "qName": "v_Max_Month_ID_Test",
+    "qNumberPresentation": {
+      "qType": "U",
+      "qnDec": 10,
+      "qUseThou": 0
+    },
+    "qDefinition": "if (  [Month ID - This Month] < $(V),   [Month ID - This Month]  )",
+    "tags": []
+  },
+  {
+    "qInfo": {
+      "qId": "0b6300e4-3664-4251-9ba7-e397bd8edc50",
+      "qType": "variable"
+    },
+    "qMetaDef": {},
+    "qName": "v_Switch_Option_Month_YTD_Filter_CLEARANCE",
+    "qNumberPresentation": {
+      "qType": "U",
+      "qnDec": 10,
+      "qUseThou": 0
+    },
+    "qDefinition": "=if($(v_Switch_Option_CM_YTD)=1,\r\n\t\t\t'[Month ID] = {\"$(=$(v_Max_Month_ID_CLEARANCE))\"}',\n            if($(v_Switch_Option_CM_YTD)=2,\n             '[Month ID]={\"<=$(=$(v_Max_Month_ID_CLEARANCE))\"}, Year = {$(v_Max_Year_CLEARANCE)}')) \n             \n",
+    "tags": []
+  },
+  {
+    "qInfo": {
+      "qId": "109980ed-07d8-432e-9681-ffe228cf482c",
+      "qType": "variable"
+    },
+    "qMetaDef": {},
+    "qName": "v_Switch_Measure_2",
+    "qNumberPresentation": {
+      "qType": "U",
+      "qnDec": 10,
+      "qUseThou": 0
+    },
+    "qDefinition": "2",
+    "tags": []
+  },
+  {
+    "qInfo": {
+      "qId": "14d2170a-f8f7-42ac-a9e2-d4112d844225",
+      "qType": "variable"
+    },
+    "qMetaDef": {},
+    "qName": "v_Number_Of_Days_SEA",
+    "qNumberPresentation": {
+      "qType": "U",
+      "qnDec": 10,
+      "qUseThou": 0
+    },
+    "qDefinition": "Interval( only({<$(v_Switch_Option_Month_YTD_Filter_SEA) >} [Actual time of arrival - Destination - SEA]) -only({<$(v_Switch_Option_Month_YTD_Filter_SEA)>}[Est. time of arrival - Destination - SEA]),'DD')\r\n\n\n\n",
+    "tags": []
+  },
+  {
+    "qInfo": {
+      "qId": "1632c4fc-51a1-467b-a6b9-d7029fd355e1",
+      "qType": "variable"
+    },
+    "qMetaDef": {},
+    "qName": "A",
+    "qNumberPresentation": {
+      "qType": "U",
+      "qnDec": 10,
+      "qUseThou": 0
+    },
+    "qDefinition": "= if\r\n(IsNull(GetFieldSelections([Year])),\nif\n(IsNull(GetFieldSelections([Month])),\nMax({1<[Freight Type]={'SEA' , 'AIR' , 'LAND' , 'CLEARANCE'}, Year=P(Year),Quarter=P(Quarter),[Month Year]=P([Month Year]),[Month Num]=P([Month Num]),Month=P(Month)>}[Month ID - This Month]),\nMax({1<[Freight Type]={'SEA' , 'AIR' , 'LAND' , 'CLEARANCE'},Year=P(Year),Quarter=P(Quarter),[Month Year]=P([Month Year]),[Month Num]=P([Month Num]),Month=P(Month)>}[Month ID - This Month])\n)\n,\nMax({1<[Freight Type]={'SEA' , 'AIR' , 'LAND' , 'CLEARANCE'},Year=P(Year),Quarter=P(Quarter),[Month Year]=P([Month Year]),[Month Num]=P([Month Num]),Month=P(Month)>}[Month ID])\n\n)",
+    "tags": []
+  },
+  {
+    "qInfo": {
+      "qId": "16bddd65-fbd7-45b4-ac62-47dd1f063b19",
+      "qType": "variable"
+    },
+    "qMetaDef": {},
+    "qName": "v_AIR_POs",
+    "qNumberPresentation": {
+      "qType": "U",
+      "qnDec": 10,
+      "qUseThou": 0
+    },
+    "qDefinition": "\r\n\ncount({<  $(v_Switch_Option_Month_YTD_Filter_AIR)  >} distinct [Purchase Order Key - AIR])\n\n",
+    "tags": []
+  },
+  {
+    "qInfo": {
+      "qId": "199baccb-f1c8-4e68-bae5-ecdc124adaef",
+      "qType": "variable"
+    },
+    "qMetaDef": {},
+    "qName": "v_Max_Year_CLEARANCE",
+    "qNumberPresentation": {
+      "qType": "U",
+      "qnDec": 10,
+      "qUseThou": 0
+    },
+    "qDefinition": "=Max({1<[Freight Type]={'CLEARANCE'}, Year=P(Year),Quarter=P(Quarter),[Month Year]=P([Month Year]),[Month Num]=P([Month Num]),Month=P(Month)>}Year)",
+    "tags": []
+  },
+  {
+    "qInfo": {
+      "qId": "1a726218-3d76-4681-a4ba-ac95226f2f85",
+      "qType": "variable"
+    },
+    "qMetaDef": {},
+    "qName": "v_CLEARANCE_Measures",
+    "qNumberPresentation": {
+      "qType": "U",
+      "qnDec": 10,
+      "qUseThou": 0
+    },
+    "qDefinition": "Pick (\r\n\n$(v_Switch_Measure_4)\n,count({<  [Freight Type] = {'CLEARANCE'} ,$(v_Switch_Option_Month_YTD_Filter_CLEARANCE) >} distinct  [Purchase Order Key])\n,sum ({<  [Freight Type] = {'CLEARANCE'} ,$(v_Switch_Option_Month_YTD_Filter_CLEARANCE) >} [Purchase Price])\n,sum ({<  [Freight Type] = {'CLEARANCE'} ,$(v_Switch_Option_Month_YTD_Filter_CLEARANCE) >} [No of Containers - CLEARANCE])\n,sum ({<  [Freight Type] = {'CLEARANCE'},$(v_Switch_Option_Month_YTD_Filter_CLEARANCE)  >} [PL Amount])\n\n)\n",
+    "tags": []
+  },
+  {
+    "qInfo": {
+      "qId": "21322234-b54a-456f-bd67-f7a7d6d99a7f",
+      "qType": "variable"
+    },
+    "qMetaDef": {},
+    "qName": "v_Switch_Option_Month_YTD_Filter_LAND",
+    "qNumberPresentation": {
+      "qType": "U",
+      "qnDec": 10,
+      "qUseThou": 0
+    },
+    "qDefinition": "=if($(v_Switch_Option_CM_YTD)=1,\r\n\t\t\t'[Month ID] = {\"$(=$(v_Max_Month_ID_LAND))\"}',\n            if($(v_Switch_Option_CM_YTD)=2,\n             '[Month ID]={\"<=$(=$(v_Max_Month_ID_LAND))\"}, Year = {$(v_Max_Year_LAND)}')) ",
+    "tags": []
+  },
+  {
+    "qInfo": {
+      "qId": "26793559-7185-44a3-8a6a-bca2b79fb0a2",
+      "qType": "variable"
+    },
+    "qMetaDef": {},
+    "qName": "v_OTIF_Status_CLEARANCE",
+    "qNumberPresentation": {
+      "qType": "U",
+      "qnDec": 10,
+      "qUseThou": 0
+    },
+    "qDefinition": "if (  WildMatch (  upper ([Final Destination - CLEARANCE]) , '*BOND*' ) and $(v_Number_Of_Days_CLEARANCE) <= 19 , 'HIT' , \r\nif (  WildMatch ( upper ( [Final Destination - CLEARANCE]) , '*BOND*' ) and $(v_Number_Of_Days_CLEARANCE) > 19 , 'MISS' , \n\n\tif ( $(v_Number_Of_Days_CLEARANCE) <= 3 , 'HIT' , \n\tif ( $(v_Number_Of_Days_CLEARANCE) >3, 'MISS' ,\n    \n    \tif ( WildMatch ( upper ([Final Destination - CLEARANCE]) , '*BOND*' ) and  [Estimated Time of Arrival - CLEARANCE] + 19  < today ()  and isnull ([CLD Actual arrival time (ATA) - CLEARANCE]) , 'MISS',\n    \tif ( [Estimated Time of Arrival - CLEARANCE] + 3  < today ()  and isnull ([CLD Actual arrival time (ATA) - CLEARANCE]) , 'MISS') )))))\n",
+    "tags": []
+  },
+  {
+    "qInfo": {
+      "qId": "320f67cf-d553-4c01-9ed8-7284ed13b7b2",
+      "qType": "variable"
+    },
+    "qMetaDef": {},
+    "qName": "v_Max_Year_LAND",
+    "qNumberPresentation": {
+      "qType": "U",
+      "qnDec": 10,
+      "qUseThou": 0
+    },
+    "qDefinition": "=Max({1<[Freight Type]={'LAND'}, Year=P(Year),Quarter=P(Quarter),[Month Year]=P([Month Year]),[Month Num]=P([Month Num]),Month=P(Month)>}Year)",
+    "tags": []
+  },
+  {
+    "qInfo": {
+      "qId": "3760cc11-2d76-46fc-96db-515ab76ded15",
+      "qType": "variable"
+    },
+    "qMetaDef": {},
+    "qName": "v_MISS_LAND",
+    "qNumberPresentation": {
+      "qType": "U",
+      "qnDec": 10,
+      "qUseThou": 0
+    },
+    "qDefinition": "count (  aggr (  \r\n\tif ( $(v_Number_Of_Days_LAND) >= 2 , '1' ,\n    if ( Date(    only({<$(v_Switch_Option_Month_YTD_Filter_LAND) >} [PL Delivery Date])) + 2 < today ()  \n    \tand isnull (    only({< $(v_Switch_Option_Month_YTD_Filter_LAND) >}[PL Confirmed Delivery Date])) , '1') ) ,[Purchase Order Key - LAND]) )\n    \n    \n    \n    \n",
+    "tags": []
+  },
+  {
+    "qInfo": {
+      "qId": "3fe82b9b-6d99-4057-ad18-c9bd5cc59176",
+      "qType": "variable"
+    },
+    "qMetaDef": {},
+    "qName": "v_Switch_Measure_3",
+    "qNumberPresentation": {
+      "qType": "U",
+      "qnDec": 10,
+      "qUseThou": 0
+    },
+    "qDefinition": "4",
+    "tags": []
+  },
+  {
+    "qInfo": {
+      "qId": "4094c16b-6481-4b3a-b4ff-6a6b8dd4167d",
+      "qType": "variable"
+    },
+    "qMetaDef": {},
+    "qName": "v_OTIF_Status_AIR",
+    "qNumberPresentation": {
+      "qType": "U",
+      "qnDec": 10,
+      "qUseThou": 0
+    },
+    "qDefinition": "if ( $(v_Number_Of_Days_AIR) >= 4 or   $(v_Number_Of_Days_AIR) <=-4 , 'MISS' ,\r\n\tif ( $(v_Number_Of_Days_AIR) < 4  or    $(v_Number_Of_Days_AIR) > -4 , 'HIT',\n    'PENDING') )\n",
+    "tags": []
+  },
+  {
+    "qInfo": {
+      "qId": "44008e29-8ec4-4c03-a3e8-7842d0deabd1",
+      "qType": "variable"
+    },
+    "qMetaDef": {},
+    "qName": "v_Switch_Option_Month_YTD_Filter_SEA",
+    "qNumberPresentation": {
+      "qType": "U",
+      "qnDec": 10,
+      "qUseThou": 0
+    },
+    "qDefinition": "=if($(v_Switch_Option_CM_YTD)=1,\r\n\t\t\t'[Month ID] = {\"$(=$(v_Max_Month_ID_SEA))\"}',\n            if($(v_Switch_Option_CM_YTD)=2,\n             '[Month ID]={\"<=$(=$(v_Max_Month_ID_SEA))\"}, Year = {$(v_Max_Year_Sea)}'))  ",
+    "tags": []
+  },
+  {
+    "qInfo": {
+      "qId": "45083e1f-9fde-483e-9830-abaf51c66b91",
+      "qType": "variable"
+    },
+    "qMetaDef": {},
+    "qName": "v_HIT_SEA",
+    "qNumberPresentation": {
+      "qType": "U",
+      "qnDec": 10,
+      "qUseThou": 0
+    },
+    "qDefinition": "count (  aggr (   if ( $(v_Number_Of_Days_SEA) < 4 , 1) , [Waybill Number] )) \n",
+    "tags": []
+  },
+  {
+    "qInfo": {
+      "qId": "4598a5f9-b873-4116-8f7e-a83e153d2e0b",
+      "qType": "variable"
+    },
+    "qMetaDef": {},
+    "qName": "v_Number_Of_Days_CLEARANCE",
+    "qNumberPresentation": {
+      "qType": "U",
+      "qnDec": 10,
+      "qUseThou": 0
+    },
+    "qDefinition": "Interval( only({<$(v_Switch_Option_Month_YTD_Filter_CLEARANCE) >}[Estimated Time of Arrival - CLEARANCE]) -only({<$(v_Switch_Option_Month_YTD_Filter_CLEARANCE) >} [CLD Actual arrival time (ATA) - CLEARANCE]),'DD')\r\n\n\n\n",
+    "tags": []
+  },
+  {
+    "qInfo": {
+      "qId": "48ef7df5-a211-415a-9b6e-89a3b0933c06",
+      "qType": "variable"
+    },
+    "qMetaDef": {},
+    "qName": "vMinCalendarDate",
+    "qNumberPresentation": {
+      "qType": "U",
+      "qnDec": 10,
+      "qUseThou": 0
+    },
+    "qDefinition": "43466",
+    "qIsScriptCreated": true
+  },
+  {
+    "qInfo": {
+      "qId": "4c543249-7e7d-4a8b-a613-942cba2da333",
+      "qType": "variable"
+    },
+    "qMetaDef": {},
+    "qName": "v_MISS_CLEARANCE",
+    "qNumberPresentation": {
+      "qType": "U",
+      "qnDec": 10,
+      "qUseThou": 0
+    },
+    "qDefinition": "count (  aggr (  \r\n\nif (  WildMatch (  upper ([Final Destination - CLEARANCE]) , '*BOND*' ) and $(v_Number_Of_Days_CLEARANCE) > 19 , 1 ,\n\tif ( $(v_Number_Of_Days_CLEARANCE) > 3 , '1' ,\n    if ( Date(    only({<$(v_Switch_Option_Month_YTD_Filter_CLEARANCE) >} [Estimated Time of Arrival - CLEARANCE] )) + 3 < today ()  \n    \tand isnull (    only({< $(v_Switch_Option_Month_YTD_Filter_CLEARANCE) >} [CLD Actual arrival time (ATA) - CLEARANCE])) , '1') )) ,[Purchase Order Key - CLEARANCE]) )\n    \n    \n    \n    \n",
+    "tags": []
+  },
+  {
+    "qInfo": {
+      "qId": "4dc8dddb-4dbd-4a2e-873d-d5952ccde611",
+      "qType": "variable"
+    },
+    "qMetaDef": {},
+    "qName": "v_All_POs",
+    "qNumberPresentation": {
+      "qType": "U",
+      "qnDec": 10,
+      "qUseThou": 0
+    },
+    "qDefinition": "count({<  $(v_Switch_Option_Month_YTD_Filter)  >} distinct [Purchase Order Key])\n\n",
+    "tags": []
+  },
+  {
+    "qInfo": {
+      "qId": "4ddd4065-4fe3-4ef9-800f-208870e6b4d5",
+      "qType": "variable"
+    },
+    "qMetaDef": {},
+    "qName": "v_LAND_Measures",
+    "qNumberPresentation": {
+      "qType": "U",
+      "qnDec": 10,
+      "qUseThou": 0
+    },
+    "qDefinition": "Pick (\r\n\n$(v_Switch_Measure_3)\n,count({<  [Freight Type] = {'LAND'} ,$(v_Switch_Option_Month_YTD_Filter_LAND) >} distinct  [Purchase Order Key])\n,sum ({<  [Freight Type] = {'LAND'} ,$(v_Switch_Option_Month_YTD_Filter_LAND) >}  [Cargo Net Weight - LAND])\n,sum ({<  [Freight Type] = {'LAND'} ,$(v_Switch_Option_Month_YTD_Filter_LAND) >} [Purchase Price])\n,sum ({<  [Freight Type] = {'LAND'} ,$(v_Switch_Option_Month_YTD_Filter_LAND) >}  [Cargo Num of Trucks - LAND])\n,sum ({<  [Freight Type] = {'LAND'} ,$(v_Switch_Option_Month_YTD_Filter_LAND) >}  [Cargo Num of Pallets - LAND])\n,sum ({<  [Freight Type] = {'LAND'} ,$(v_Switch_Option_Month_YTD_Filter_LAND) >} [Cargo Value - LAND])\n,sum ({<  [Freight Type] = {'LAND'} ,$(v_Switch_Option_Month_YTD_Filter_LAND) >} [PL Amount])\n)\n",
+    "tags": []
+  },
+  {
+    "qInfo": {
+      "qId": "4f633f9a-943e-4ab0-922a-a4c185f84aba",
+      "qType": "variable"
+    },
+    "qMetaDef": {},
+    "qName": "v_Switch_Option_CM_YTD",
+    "qNumberPresentation": {
+      "qType": "U",
+      "qnDec": 10,
+      "qUseThou": 0
+    },
+    "qDefinition": "2",
+    "tags": []
+  },
+  {
+    "qInfo": {
+      "qId": "5a454d81-4c1c-4eeb-a999-dffd8f3e6cb4",
+      "qType": "variable"
+    },
+    "qMetaDef": {},
+    "qName": "v_OTIF_AIR",
+    "qNumberPresentation": {
+      "qType": "U",
+      "qnDec": 10,
+      "qUseThou": 0
+    },
+    "qDefinition": "count (  aggr (   if ( $(v_OTIF_Status_AIR) = 'HIT' , 1) ,[Waybill Number - AIR] )) \r\n/\ncount({< $(v_Switch_Option_Month_YTD_Filter_AIR) >} distinct     [Waybill Number - AIR])\n\n",
+    "tags": []
+  },
+  {
+    "qInfo": {
+      "qId": "617b33d4-75ff-448e-a74f-c38cf17b9481",
+      "qType": "variable"
+    },
+    "qMetaDef": {},
+    "qName": "v_SEA_Containers",
+    "qNumberPresentation": {
+      "qType": "U",
+      "qnDec": 10,
+      "qUseThou": 0
+    },
+    "qDefinition": "\r\nsum( aggr ( sUM({$< $(v_Switch_Option_Month_YTD_Filter_SEA) , [Freight Type] = {'SEA'}  >} [Container Per Size - SEA]) , [Purchase Order Key - SEA] ) )\n\n",
+    "tags": []
+  },
+  {
+    "qInfo": {
+      "qId": "651d1936-4a45-4768-bb4a-5b1d8a7e0293",
+      "qType": "variable"
+    },
+    "qMetaDef": {},
+    "qName": "v_WN_AIR",
+    "qNumberPresentation": {
+      "qType": "U",
+      "qnDec": 10,
+      "qUseThou": 0
+    },
+    "qDefinition": "count({<  $(v_Switch_Option_Month_YTD_Filter_AIR)  >} distinct     [Waybill Number - AIR])",
+    "tags": []
+  },
+  {
+    "qInfo": {
+      "qId": "67499e96-04de-4c1f-87a8-91edee87055d",
+      "qType": "variable"
+    },
+    "qMetaDef": {},
+    "qName": "v_OTIF_Status_LAND",
+    "qNumberPresentation": {
+      "qType": "U",
+      "qnDec": 10,
+      "qUseThou": 0
+    },
+    "qDefinition": "if ( $(v_Number_Of_Days_LAND) < 2 , 'HIT' , \r\n\tif ( $(v_Number_Of_Days_LAND) >= 2 , 'MISS' ,\n      if ( Date(only({< $(v_Switch_Option_Month_YTD_Filter_LAND) >}[PL Delivery Date])) + 2  < today ()  and isnull (only({< $(v_Switch_Option_Month_YTD_Filter_LAND)>} ([PL Confirmed Delivery Date]))) , 'MISS') ))\n    ",
+    "tags": []
+  },
+  {
+    "qInfo": {
+      "qId": "715edf81-8ecf-4421-bfd7-1ea52ed9a11f",
+      "qType": "variable"
+    },
+    "qMetaDef": {},
+    "qName": "v_Max_Month_ID_SEA",
+    "qNumberPresentation": {
+      "qType": "U",
+      "qnDec": 10,
+      "qUseThou": 0
+    },
+    "qDefinition": "=Max({1<[Freight Type]={'SEA'}, Year=P(Year),Quarter=P(Quarter),[Month Year]=P([Month Year]),[Month Num]=P([Month Num]),Month=P(Month)>}[Month ID])",
+    "tags": []
+  },
+  {
+    "qInfo": {
+      "qId": "7776c05d-86dc-4fb6-8df1-e1255e1d89d2",
+      "qType": "variable"
+    },
+    "qMetaDef": {},
+    "qName": "v_SEA_POs",
+    "qNumberPresentation": {
+      "qType": "U",
+      "qnDec": 10,
+      "qUseThou": 0
+    },
+    "qDefinition": "\n\ncount({$< $(v_Switch_Option_Month_YTD_Filter_SEA) , [Freight Type] = {'SEA'}  >} distinct [Purchase Order Key - SEA])\n\n",
+    "tags": []
+  },
+  {
+    "qInfo": {
+      "qId": "79d24e28-1322-4afb-870b-fc89cf044fa7",
+      "qType": "variable"
+    },
+    "qMetaDef": {},
+    "qName": "v_PENDING_CLEARANCE",
+    "qNumberPresentation": {
+      "qType": "U",
+      "qnDec": 10,
+      "qUseThou": 0
+    },
+    "qDefinition": "\r\n\ncount({< $(v_Switch_Option_Month_YTD_Filter_CLEARANCE) , [Freight Type] = {'CLEARANCE'}  >} distinct [Purchase Order])\n\n\n-\n(\ncount (  aggr (  \nif (  WildMatch (  upper ([Final Destination - CLEARANCE]) , '*BOND*' ) and $(v_Number_Of_Days_CLEARANCE)  > 19 , 1 ,\n\tif ( $(v_Number_Of_Days_CLEARANCE) > 3 , '1' ,\n    if ( Date(    only({<$(v_Switch_Option_Month_YTD_Filter_CLEARANCE) >} [Estimated Time of Arrival - CLEARANCE] )) + 3 < today ()  \n    \tand isnull (    only({< $(v_Switch_Option_Month_YTD_Filter_CLEARANCE) >} [CLD Actual arrival time (ATA) - CLEARANCE])) , '1') )) ,[Purchase Order Key - CLEARANCE]) )\n    \n    \n    \n    \n\n        \n        +\n        \n       count (  aggr (   \n       \n       \n       if (  WildMatch (  upper ([Final Destination - CLEARANCE]) , '*BOND*' ) and $(v_Number_Of_Days_CLEARANCE) <= 19 , 1 ,\n       if ( $(v_Number_Of_Days_CLEARANCE) <= 3 , 1)) , [Purchase Order Key - CLEARANCE] )) \n\n        \n        )\n    \n    \n    \n    \n",
+    "tags": []
+  },
+  {
+    "qInfo": {
+      "qId": "7d405856-2214-4652-a1e7-4a44c216701f",
+      "qType": "variable"
+    },
+    "qMetaDef": {},
+    "qName": "v_Selected_Dimension_Clearance",
+    "qNumberPresentation": {
+      "qType": "U",
+      "qnDec": 10,
+      "qUseThou": 0
+    },
+    "qDefinition": "1",
+    "tags": []
+  },
+  {
+    "qInfo": {
+      "qId": "7ff0f4c1-6d48-4ad1-adab-16a5b4a277b2",
+      "qType": "variable"
+    },
+    "qMetaDef": {},
+    "qName": "V",
+    "qNumberPresentation": {
+      "qType": "U",
+      "qnDec": 10,
+      "qUseThou": 0
+    },
+    "qDefinition": "= if\r\n(IsNull(GetFieldSelections([Year])),\nif\n(IsNull(GetFieldSelections([Month])),\nMax({1<[Freight Type]={'SEA' , 'AIR' , 'LAND' , 'CLEARANCE'}, Year=P(Year),Quarter=P(Quarter),[Month Year]=P([Month Year]),[Month Num]=P([Month Num]),Month=P(Month)>}[Month ID]),\nMax({1<[Freight Type]={'SEA' , 'AIR' , 'LAND' , 'CLEARANCE'},Year=P(Year),Quarter=P(Quarter),[Month Year]=P([Month Year]),[Month Num]=P([Month Num]),Month=P(Month)>}[Month ID])\n)\n,\nMax({1<[Freight Type]={'SEA' , 'AIR' , 'LAND' , 'CLEARANCE'},Year=P(Year),Quarter=P(Quarter),[Month Year]=P([Month Year]),[Month Num]=P([Month Num]),Month=P(Month)>}[Month ID])\n\n)",
+    "tags": []
+  },
+  {
+    "qInfo": {
+      "qId": "8473f706-4393-40c2-accd-3e799cdd214a",
+      "qType": "variable"
+    },
+    "qMetaDef": {},
+    "qName": "v_Selected_Dimension_Air",
+    "qNumberPresentation": {
+      "qType": "U",
+      "qnDec": 10,
+      "qUseThou": 0
+    },
+    "qDefinition": "4",
+    "tags": []
+  },
+  {
+    "qInfo": {
+      "qId": "8674315c-9e07-4e7d-b8de-cc8d5d065fb4",
+      "qType": "variable"
+    },
+    "qMetaDef": {},
+    "qName": "v_Max_Month_ID_AIR",
+    "qNumberPresentation": {
+      "qType": "U",
+      "qnDec": 10,
+      "qUseThou": 0
+    },
+    "qDefinition": "=Max({1<[Freight Type]={'AIR'}, Year=P(Year),Quarter=P(Quarter),[Month Year]=P([Month Year]),[Month Num]=P([Month Num]),Month=P(Month)>}[Month ID])",
+    "tags": []
+  },
+  {
+    "qInfo": {
+      "qId": "877cf9ba-c132-4962-8a9f-d54972b4a19b",
+      "qType": "variable"
+    },
+    "qMetaDef": {},
+    "qName": "v_Max_Month_ID_CLEARANCE",
+    "qNumberPresentation": {
+      "qType": "U",
+      "qnDec": 10,
+      "qUseThou": 0
+    },
+    "qDefinition": "=Max({1<[Freight Type]={'CLEARANCE'}, Year=P(Year),Quarter=P(Quarter),[Month Year]=P([Month Year]),[Month Num]=P([Month Num]),Month=P(Month)>}[Month ID])",
+    "tags": []
+  },
+  {
+    "qInfo": {
+      "qId": "89572482-bdb1-4373-b348-7d455ba79d8b",
+      "qType": "variable"
+    },
+    "qMetaDef": {},
+    "qName": "v_Max_Month_ID",
+    "qNumberPresentation": {
+      "qType": "U",
+      "qnDec": 10,
+      "qUseThou": 0
+    },
+    "qDefinition": "=Max({1<[Freight Type]= {'LAND','CLEARANCE','AIR','SEA'} , Year=P(Year),Quarter=P(Quarter),[Month Year]=P([Month Year]),[Month Num]=P([Month Num]),Month=P(Month)>} [Month ID])",
+    "tags": []
+  },
+  {
+    "qInfo": {
+      "qId": "8aca007c-bd0f-42bc-ab32-8c43d71987c6",
+      "qType": "variable"
+    },
+    "qMetaDef": {},
+    "qName": "v_Max_Year",
+    "qNumberPresentation": {
+      "qType": "U",
+      "qnDec": 10,
+      "qUseThou": 0
+    },
+    "qDefinition": "=Max({1<[Freight Type]= {'LAND','CLEARANCE','AIR','SEA'} , Year=P(Year),Quarter=P(Quarter),[Month Year]=P([Month Year]),[Month Num]=P([Month Num]),Month=P(Month)>} Year)",
+    "tags": []
+  },
+  {
+    "qInfo": {
+      "qId": "906a3f16-4669-4b28-9ed7-11b8679c27dc",
+      "qType": "variable"
+    },
+    "qMetaDef": {},
+    "qName": "v_OTIF_LAND",
+    "qNumberPresentation": {
+      "qType": "U",
+      "qnDec": 10,
+      "qUseThou": 0
+    },
+    "qDefinition": "count (  aggr (   if ( $(v_Number_Of_Days_LAND) < 2 , 1) , [Purchase Order Key - LAND] )) \r\n/\ncount({<$(v_Switch_Option_Month_YTD_Filter_LAND)>} distinct    [Purchase Order Key - LAND])\n\n",
+    "tags": []
+  },
+  {
+    "qInfo": {
+      "qId": "9d7dc1a0-f138-4017-8521-bfd4c0215b7a",
+      "qType": "variable"
+    },
+    "qMetaDef": {},
+    "qName": "v_WN_SEA",
+    "qNumberPresentation": {
+      "qType": "U",
+      "qnDec": 10,
+      "qUseThou": 0
+    },
+    "qDefinition": "count({< $(v_Switch_Option_Month_YTD_Filter_SEA) ,  [Freight Type] = {'SEA'}  >} distinct     [Waybill Number])\n\n",
+    "tags": []
+  },
+  {
+    "qInfo": {
+      "qId": "a07d68d5-eb14-4f44-ba7f-3d5c41dd77b9",
+      "qType": "variable"
+    },
+    "qMetaDef": {},
+    "qName": "v_Max_Year_Sea",
+    "qNumberPresentation": {
+      "qType": "U",
+      "qnDec": 10,
+      "qUseThou": 0
+    },
+    "qDefinition": "=Max({1<[Freight Type]={'SEA'}, Year=P(Year),Quarter=P(Quarter),[Month Year]=P([Month Year]),[Month Num]=P([Month Num]),Month=P(Month)>}Year)",
+    "tags": []
+  },
+  {
+    "qInfo": {
+      "qId": "a152673f-fb15-45f0-93e2-9772fda3b2ba",
+      "qType": "variable"
+    },
+    "qMetaDef": {},
+    "qName": "v_Selected_Dimension_Two",
+    "qNumberPresentation": {
+      "qType": "U",
+      "qnDec": 10,
+      "qUseThou": 0
+    },
+    "qDefinition": "1",
+    "tags": []
+  },
+  {
+    "qInfo": {
+      "qId": "a5488111-5a11-4e96-aa7e-276ebf9b166f",
+      "qType": "variable"
+    },
+    "qMetaDef": {},
+    "qName": "v_AIR_Measures",
+    "qNumberPresentation": {
+      "qType": "U",
+      "qnDec": 10,
+      "qUseThou": 0
+    },
+    "qDefinition": "Pick (\r\n\n$(v_Switch_Measure_2)\n,count({<  [Freight Type] = {'AIR'} ,$(v_Switch_Option_Month_YTD_Filter_AIR) >} distinct  [Waybill Number - AIR])\n,count({<  [Freight Type] = {'AIR'} ,$(v_Switch_Option_Month_YTD_Filter_AIR) >} distinct  [Purchase Order Key])\n,sum({<  [Freight Type] = {'AIR'} ,$(v_Switch_Option_Month_YTD_Filter_AIR) >}   [Invoice Value - AIR])\n,sum({<  [Freight Type] = {'AIR'} ,$(v_Switch_Option_Month_YTD_Filter_AIR) >}   [Net weight - AIR])\n,sum({<  [Freight Type] = {'AIR'},$(v_Switch_Option_Month_YTD_Filter_AIR)  >}  [Purchase Price])\n,sum ({<  [Freight Type] = {'AIR'} ,$(v_Switch_Option_Month_YTD_Filter_AIR) >} [PL Amount])\n)",
+    "tags": []
+  },
+  {
+    "qInfo": {
+      "qId": "a5e103ad-078b-4ccf-99ba-6d59e5a38f31",
+      "qType": "variable"
+    },
+    "qMetaDef": {},
+    "qName": "vMaxCalendarDate",
+    "qNumberPresentation": {
+      "qType": "U",
+      "qnDec": 10,
+      "qUseThou": 0
+    },
+    "qDefinition": "44347",
+    "qIsScriptCreated": true
+  },
+  {
+    "qInfo": {
+      "qId": "a60b7ace-ccc7-49a1-af9d-481571f060dd",
+      "qType": "variable"
+    },
+    "qMetaDef": {},
+    "qName": "vTodaysDate",
+    "qNumberPresentation": {
+      "qType": "U",
+      "qnDec": 10,
+      "qUseThou": 0
+    },
+    "qDefinition": "5/27/2021",
+    "qIsScriptCreated": true
+  },
+  {
+    "qInfo": {
+      "qId": "a997aa9e-a008-43d6-a9dc-41c0ac1f039a",
+      "qType": "variable"
+    },
+    "qMetaDef": {},
+    "qName": "v_Switch_Option_Month_YTD_Filter",
+    "qNumberPresentation": {
+      "qType": "U",
+      "qnDec": 10,
+      "qUseThou": 0
+    },
+    "qDefinition": "=if($(v_Switch_Option_CM_YTD)=1,\r\n\t\t\t'[Month ID]={$(v_Max_Month_ID)} , Month = ',\n            if($(v_Switch_Option_CM_YTD)=2,\n             '[Month ID]={\"<=$(v_Max_Month_ID)\"}, Year = {$(v_Max_Year)} , Month =  ')) ",
+    "tags": []
+  },
+  {
+    "qInfo": {
+      "qId": "ac7af621-ed2c-4032-bdb2-3bdce53b5238",
+      "qType": "variable"
+    },
+    "qMetaDef": {},
+    "qName": "vTodaysDateMonth",
+    "qNumberPresentation": {
+      "qType": "U",
+      "qnDec": 10,
+      "qUseThou": 0
+    },
+    "qDefinition": "May",
+    "qIsScriptCreated": true
+  },
+  {
+    "qInfo": {
+      "qId": "acc9db52-6b11-49cd-9377-578ce6d67629",
+      "qType": "variable"
+    },
+    "qMetaDef": {},
+    "qName": "v_LAND_POs",
+    "qNumberPresentation": {
+      "qType": "U",
+      "qnDec": 10,
+      "qUseThou": 0
+    },
+    "qDefinition": "\r\n\ncount({< $(v_Switch_Option_Month_YTD_Filter_LAND) , [Freight Type] = {'LAND'}  >} distinct [Purchase Order])\n\n",
+    "tags": []
+  },
+  {
+    "qInfo": {
+      "qId": "ad4a889e-1bec-4838-9c4c-532d2fa46e20",
+      "qType": "variable"
+    },
+    "qMetaDef": {},
+    "qName": "v_SEA_Measures",
+    "qNumberPresentation": {
+      "qType": "U",
+      "qnDec": 10,
+      "qUseThou": 0
+    },
+    "qDefinition": "Pick (\r\n\n$(v_Switch_Measure_1)\n,count({<  [Freight Type] = {'SEA'},$(v_Switch_Option_Month_YTD_Filter_SEA)  >} distinct  [Waybill Number])\n,sum({<  [Freight Type] = {'SEA'} ,$(v_Switch_Option_Month_YTD_Filter_SEA) >}  [Container Per Size - SEA])\n,count({<  [Freight Type] = {'SEA'} ,$(v_Switch_Option_Month_YTD_Filter_SEA) >} distinct  [Purchase Order Key - SEA])\n,sum ({<  [Freight Type] = {'SEA'} ,$(v_Switch_Option_Month_YTD_Filter_SEA) >} [Net Weight - SEA] )\n,sum ({<  [Freight Type] = {'SEA'} ,$(v_Switch_Option_Month_YTD_Filter_SEA) >} [Purchase Price])\n,sum ({<  [Freight Type] = {'SEA'} ,$(v_Switch_Option_Month_YTD_Filter_SEA) >} [Sales Price])\n,sum ({<  [Freight Type] = {'SEA'} ,$(v_Switch_Option_Month_YTD_Filter_SEA) >} [PL Amount])\n)\n\n",
+    "tags": []
+  },
+  {
+    "qInfo": {
+      "qId": "b43e58eb-08d8-41b4-89ec-285372071893",
+      "qType": "variable"
+    },
+    "qMetaDef": {},
+    "qName": "v_OTIF_Status_SEA",
+    "qNumberPresentation": {
+      "qType": "U",
+      "qnDec": 10,
+      "qUseThou": 0
+    },
+    "qDefinition": "if ( $(v_Number_Of_Days_SEA) < 4 , 'HIT' , \r\n\tif ( $(v_Number_Of_Days_SEA) >= 4 , 'MISS' ,\n    if ( Date(only({< $(v_Switch_Option_Month_YTD_Filter_SEA) >} [Est. time of arrival - Destination - SEA])) + 4  < today ()  and isnull (only({< $(v_Switch_Option_Month_YTD_Filter_SEA)>} [Actual time of arrival - Destination - SEA])) , 'MISS') ))\n    \n    \n    \n",
+    "tags": []
+  },
+  {
+    "qInfo": {
+      "qId": "b53fd63e-bf31-4d05-a993-dae37a269599",
+      "qType": "variable"
+    },
+    "qMetaDef": {},
+    "qName": "v_PENDING_LAND",
+    "qNumberPresentation": {
+      "qType": "U",
+      "qnDec": 10,
+      "qUseThou": 0
+    },
+    "qDefinition": "count({< $(v_Switch_Option_Month_YTD_Filter_LAND) , [Freight Type] = {'LAND'}  >} distinct [Purchase Order])\r\n\n-\n\n(count (  aggr (  \n\tif ( $(v_Number_Of_Days_LAND) >= 2 , '1' ,\n    if ( Date(    only({<$(v_Switch_Option_Month_YTD_Filter_LAND) >} [PL Delivery Date])) + 2 < today ()  \n    \tand isnull (    only({< $(v_Switch_Option_Month_YTD_Filter_LAND) >}[PL Confirmed Delivery Date])) , '1') ) ,[Purchase Order Key - LAND]) )\n        \n        +\n        \n        count (  aggr (   if ( $(v_Number_Of_Days_LAND) < 2 , 1) , [Purchase Order Key - LAND] )) \n\n        \n        )\n    \n    \n    \n    \n",
+    "tags": []
+  },
+  {
+    "qInfo": {
+      "qId": "bd333772-d210-4750-acde-dae069d38f54",
+      "qType": "variable"
+    },
+    "qMetaDef": {},
+    "qName": "v_Number_Of_Days_LAND",
+    "qNumberPresentation": {
+      "qType": "U",
+      "qnDec": 10,
+      "qUseThou": 0
+    },
+    "qDefinition": "Interval( only({<$(v_Switch_Option_Month_YTD_Filter_LAND) >} [PL Confirmed Delivery Date]) -only({<$(v_Switch_Option_Month_YTD_Filter_LAND) >}[PL Delivery Date]),'DD')\r\n\n\n\n",
+    "tags": []
+  },
+  {
+    "qInfo": {
+      "qId": "c634b557-f280-4623-9fe4-1a34a3fd0009",
+      "qType": "variable"
+    },
+    "qMetaDef": {},
+    "qName": "v_Switch_Measure_4",
+    "qNumberPresentation": {
+      "qType": "U",
+      "qnDec": 10,
+      "qUseThou": 0
+    },
+    "qDefinition": "3",
+    "tags": []
+  },
+  {
+    "qInfo": {
+      "qId": "cc24fc05-7600-4120-b33d-daf1d80fba56",
+      "qType": "variable"
+    },
+    "qMetaDef": {},
+    "qName": "vTodaysDateYear",
+    "qNumberPresentation": {
+      "qType": "U",
+      "qnDec": 10,
+      "qUseThou": 0
+    },
+    "qDefinition": "2021",
+    "qIsScriptCreated": true
+  },
+  {
+    "qInfo": {
+      "qId": "cfe34eb1-01aa-40dd-8479-0de131a348bf",
+      "qType": "variable"
+    },
+    "qMetaDef": {},
+    "qName": "v_Selected_Dimension_Sea",
+    "qNumberPresentation": {
+      "qType": "U",
+      "qnDec": 10,
+      "qUseThou": 0
+    },
+    "qDefinition": "3",
+    "tags": []
+  },
+  {
+    "qInfo": {
+      "qId": "d2ee8a7b-e29f-4de5-be80-33cc11146731",
+      "qType": "variable"
+    },
+    "qMetaDef": {},
+    "qName": "v_HIT_LAND",
+    "qNumberPresentation": {
+      "qType": "U",
+      "qnDec": 10,
+      "qUseThou": 0
+    },
+    "qDefinition": "count (  aggr (   if ( $(v_Number_Of_Days_LAND) < 2 , 1) , [Purchase Order Key - LAND] )) \n",
+    "tags": []
+  },
+  {
+    "qInfo": {
+      "qId": "d39b2e42-0ba8-4350-96cc-344e17364605",
+      "qType": "variable"
+    },
+    "qMetaDef": {},
+    "qName": "v_HIT_CLEARANCE",
+    "qNumberPresentation": {
+      "qType": "U",
+      "qnDec": 10,
+      "qUseThou": 0
+    },
+    "qDefinition": "count (  aggr (  \r\n\nif (  WildMatch (  upper ([Final Destination - CLEARANCE]) , '*BOND*' ) and $(v_Number_Of_Days_CLEARANCE) <= 19 , 1 ,\nif ( $(v_Number_Of_Days_CLEARANCE) <= 3 , 1)) , [Purchase Order Key - CLEARANCE] )) \n\n\n",
+    "tags": []
+  },
+  {
+    "qInfo": {
+      "qId": "d8ecfe43-bb18-4fa7-a594-b5fc5dcbd397",
+      "qType": "variable"
+    },
+    "qMetaDef": {},
+    "qName": "v_Number_Of_Days_AIR",
+    "qNumberPresentation": {
+      "qType": "U",
+      "qnDec": 10,
+      "qUseThou": 0
+    },
+    "qDefinition": "Interval( only({<$(v_Switch_Option_Month_YTD_Filter_AIR), [Freight Type] = {'AIR'} >} [Est. time of departure - Origin - AIR]) -only({<$(v_Switch_Option_Month_YTD_Filter_AIR) , [Freight Type] = {'AIR'}>} [Actual time of arrival - Destination - AIR]),'DD')\r\n\n\n\n",
+    "tags": []
+  },
+  {
+    "qInfo": {
+      "qId": "db015e7c-8742-4479-96ba-ed2a05f30a2d",
+      "qType": "variable"
+    },
+    "qMetaDef": {},
+    "qName": "v_MISS_SEA",
+    "qNumberPresentation": {
+      "qType": "U",
+      "qnDec": 10,
+      "qUseThou": 0
+    },
+    "qDefinition": "count (  aggr (  \r\n\tif ( $(v_Number_Of_Days_SEA) >= 4 , '1' ,\n    if ( Date(    only({<$(v_Switch_Option_Month_YTD_Filter_SEA) >} [Est. time of arrival - Destination - SEA])) + 4  < today ()  \n    \tand isnull (    only({< $(v_Switch_Option_Month_YTD_Filter_SEA) >}[Actual time of arrival - Destination - SEA])) , '1') ) ,[Waybill Number]) )\n    \n    \n    \n    \n",
+    "tags": []
+  },
+  {
+    "qInfo": {
+      "qId": "dd1660d8-6eaf-4564-b9b0-08b207b9f81a",
+      "qType": "variable"
+    },
+    "qMetaDef": {},
+    "qName": "v_OTIF_SEA",
+    "qNumberPresentation": {
+      "qType": "U",
+      "qnDec": 10,
+      "qUseThou": 0
+    },
+    "qDefinition": "count (  aggr (   if ( $(v_Number_Of_Days_SEA) < 4 , 1) , [Waybill Number] )) \r\n/\ncount({<$(v_Switch_Option_Month_YTD_Filter_SEA)>} distinct     [Waybill Number])\n\n",
+    "tags": []
+  },
+  {
+    "qInfo": {
+      "qId": "dda29e80-f34c-49dc-96bb-e8c36dcf2b7b",
+      "qType": "variable"
+    },
+    "qMetaDef": {},
+    "qName": "v_Max_Year_AIR",
+    "qNumberPresentation": {
+      "qType": "U",
+      "qnDec": 10,
+      "qUseThou": 0
+    },
+    "qDefinition": "=Max({1<[Freight Type]={'AIR'}, Year=P(Year),Quarter=P(Quarter),[Month Year]=P([Month Year]),[Month Num]=P([Month Num]),Month=P(Month)>}Year)",
+    "tags": []
+  },
+  {
+    "qInfo": {
+      "qId": "df928634-7dff-41e6-8e75-fcec802473b9",
+      "qType": "variable"
+    },
+    "qMetaDef": {},
+    "qName": "v_HIT_AIR",
+    "qNumberPresentation": {
+      "qType": "U",
+      "qnDec": 10,
+      "qUseThou": 0
+    },
+    "qDefinition": "count ( aggr ( if ( $(v_OTIF_Status_AIR) = 'HIT', 1 ), [Waybill Number - AIR]))",
+    "tags": []
+  },
+  {
+    "qInfo": {
+      "qId": "e0fb7823-4cc2-4e80-bb35-074a19d68f07",
+      "qType": "variable"
+    },
+    "qMetaDef": {},
+    "qName": "v_OTIF_CLEARANCE",
+    "qNumberPresentation": {
+      "qType": "U",
+      "qnDec": 10,
+      "qUseThou": 0
+    },
+    "qDefinition": "count (  aggr (   \r\nif (  WildMatch (  upper ([Final Destination - CLEARANCE]) , '*BOND*' ) and $(v_Number_Of_Days_CLEARANCE) <= 19 , 1 ,\nif ( $(v_Number_Of_Days_CLEARANCE) <= 3 , 1 )) \n\n, [Purchase Order Key - CLEARANCE] )) \n\n/count({< $(v_Switch_Option_Month_YTD_Filter_CLEARANCE) , [Freight Type] = {'CLEARANCE'}  >} distinct [Purchase Order])\n\n\n\n\n",
+    "tags": []
+  },
+  {
+    "qInfo": {
+      "qId": "ea460d3c-873b-4b23-a090-86373f2419ca",
+      "qType": "variable"
+    },
+    "qMetaDef": {},
+    "qName": "v_Selected_Dimension_Overview",
+    "qNumberPresentation": {
+      "qType": "U",
+      "qnDec": 10,
+      "qUseThou": 0
+    },
+    "qDefinition": "2",
+    "tags": []
+  },
+  {
+    "qInfo": {
+      "qId": "ecc7b869-52b4-46a4-a473-2f6bbdb12a94",
+      "qType": "variable"
+    },
+    "qMetaDef": {},
+    "qName": "v_CLEARANCE_POs",
+    "qNumberPresentation": {
+      "qType": "U",
+      "qnDec": 10,
+      "qUseThou": 0
+    },
+    "qDefinition": "\r\n\ncount({< $(v_Switch_Option_Month_YTD_Filter_CLEARANCE) , [Freight Type] = {'CLEARANCE'}  >} distinct [Purchase Order])\n\n",
+    "tags": []
+  },
+  {
+    "qInfo": {
+      "qId": "ed9f8061-d371-4ff6-8912-c3619635f682",
+      "qType": "variable"
+    },
+    "qMetaDef": {},
+    "qName": "v_MISS_AIR",
+    "qNumberPresentation": {
+      "qType": "U",
+      "qnDec": 10,
+      "qUseThou": 0
+    },
+    "qDefinition": "count ( aggr ( if ( $(v_OTIF_Status_AIR) = 'MISS', 1 ), [Waybill Number - AIR] ))",
+    "tags": []
+  },
+  {
+    "qInfo": {
+      "qId": "f1c619e5-c0e0-421c-a299-3c6489a3f2fe",
+      "qType": "variable"
+    },
+    "qMetaDef": {},
+    "qName": "v_Max_Month_ID_LAND",
+    "qNumberPresentation": {
+      "qType": "U",
+      "qnDec": 10,
+      "qUseThou": 0
+    },
+    "qDefinition": "=Max({1<[Freight Type]={'LAND'}, Year=P(Year),Quarter=P(Quarter),[Month Year]=P([Month Year]),[Month Num]=P([Month Num]),Month=P(Month)>}[Month ID])",
+    "tags": []
+  },
+  {
+    "qInfo": {
+      "qId": "f25fcedb-8df8-484c-aa03-d87224066567",
+      "qType": "variable"
+    },
+    "qMetaDef": {},
+    "qName": "v_Selected_Dimension_Land",
+    "qNumberPresentation": {
+      "qType": "U",
+      "qnDec": 10,
+      "qUseThou": 0
+    },
+    "qDefinition": "2",
+    "tags": []
+  },
+  {
+    "qInfo": {
+      "qId": "f7eb838f-ba63-411a-b91b-8d6ad1de516b",
+      "qType": "variable"
+    },
+    "qMetaDef": {},
+    "qName": "v_Switch_Measure_1",
+    "qNumberPresentation": {
+      "qType": "U",
+      "qnDec": 10,
+      "qUseThou": 0
+    },
+    "qDefinition": "2",
+    "tags": []
+  },
+  {
+    "qInfo": {
+      "qId": "fb5c0d89-9f3b-42e1-9433-2d73170db638",
+      "qType": "variable"
+    },
+    "qMetaDef": {},
+    "qName": "v_PENDING_AIR",
+    "qNumberPresentation": {
+      "qType": "U",
+      "qnDec": 10,
+      "qUseThou": 0
+    },
+    "qDefinition": "count ( aggr ( if ( $(v_OTIF_Status_AIR) = 'PENDING', 1 ), [Waybill Number - AIR] ))",
+    "tags": []
+  },
+  {
+    "qInfo": {
+      "qId": "fc4c3f9b-25ef-4713-a14b-633adda58f82",
+      "qType": "variable"
+    },
+    "qMetaDef": {},
+    "qName": "v_Switch_Option_Month_YTD_Filter_AIR",
+    "qNumberPresentation": {
+      "qType": "U",
+      "qnDec": 10,
+      "qUseThou": 0
+    },
+    "qDefinition": "=if($(v_Switch_Option_CM_YTD)=1,\r\n\t\t\t'[Month ID] = {\"$(=$(v_Max_Month_ID_AIR))\"}',\n            if($(v_Switch_Option_CM_YTD)=2,\n             '[Month ID]={\"<=$(=$(v_Max_Month_ID_AIR))\"}, Year = {$(v_Max_Year_AIR)}')) ",
+    "tags": []
+  }
+]

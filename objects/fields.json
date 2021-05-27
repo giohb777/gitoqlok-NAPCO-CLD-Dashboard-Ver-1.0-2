@@ -1,0 +1,3201 @@
+[
+  {
+    "qIsHidden": true,
+    "qIsSystem": true,
+    "qName": "$Field",
+    "qTags": [
+      "$hidden",
+      "$system",
+      "$ascii",
+      "$text",
+      "$key"
+    ],
+    "qSrcTables": []
+  },
+  {
+    "qIsHidden": true,
+    "qIsSystem": true,
+    "qName": "$FieldNo",
+    "qTags": [
+      "$hidden",
+      "$system",
+      "$numeric",
+      "$integer"
+    ],
+    "qSrcTables": []
+  },
+  {
+    "qIsHidden": true,
+    "qIsSystem": true,
+    "qName": "$Fields",
+    "qTags": [
+      "$hidden",
+      "$system",
+      "$numeric",
+      "$integer"
+    ],
+    "qSrcTables": []
+  },
+  {
+    "qIsHidden": true,
+    "qIsSystem": true,
+    "qName": "$Info",
+    "qTags": [
+      "$hidden",
+      "$system",
+      "$ascii",
+      "$text"
+    ],
+    "qSrcTables": []
+  },
+  {
+    "qIsHidden": true,
+    "qIsSystem": true,
+    "qName": "$Rows",
+    "qTags": [
+      "$hidden",
+      "$system",
+      "$numeric",
+      "$integer"
+    ],
+    "qSrcTables": []
+  },
+  {
+    "qIsHidden": true,
+    "qIsSystem": true,
+    "qName": "$Table",
+    "qTags": [
+      "$hidden",
+      "$system",
+      "$ascii",
+      "$text",
+      "$key"
+    ],
+    "qSrcTables": []
+  },
+  {
+    "qName": "Actual Picked Weight - AIR",
+    "qTags": [
+      "$numeric"
+    ],
+    "qSrcTables": [
+      "Freights"
+    ]
+  },
+  {
+    "qName": "Actual Pickup Date - AIR",
+    "qTags": [
+      "$numeric",
+      "$integer"
+    ],
+    "qSrcTables": [
+      "Freights"
+    ]
+  },
+  {
+    "qName": "Actual Time of Arrival - Origin - AIR",
+    "qTags": [
+      "$numeric",
+      "$integer"
+    ],
+    "qSrcTables": [
+      "Freights"
+    ]
+  },
+  {
+    "qName": "Actual Time of Departure - Origin - AIR",
+    "qTags": [
+      "$numeric",
+      "$integer"
+    ],
+    "qSrcTables": [
+      "Freights"
+    ]
+  },
+  {
+    "qName": "Actual time of arrival - Destination - AIR",
+    "qTags": [
+      "$numeric",
+      "$integer",
+      "$timestamp",
+      "$date"
+    ],
+    "qSrcTables": [
+      "Freights"
+    ]
+  },
+  {
+    "qName": "Actual time of arrival - Destination - LAND",
+    "qTags": [
+      "$numeric",
+      "$integer",
+      "$ascii",
+      "$text"
+    ],
+    "qSrcTables": [
+      "Freights"
+    ]
+  },
+  {
+    "qName": "Actual time of arrival - Destination - SEA",
+    "qTags": [
+      "$numeric",
+      "$integer",
+      "$timestamp",
+      "$date"
+    ],
+    "qSrcTables": [
+      "Freights"
+    ]
+  },
+  {
+    "qName": "Actual time of arrival - Origin - LAND",
+    "qTags": [
+      "$numeric",
+      "$integer",
+      "$ascii",
+      "$text"
+    ],
+    "qSrcTables": [
+      "Freights"
+    ]
+  },
+  {
+    "qName": "Actual time of arrival - Origin - SEA",
+    "qTags": [
+      "$numeric",
+      "$integer"
+    ],
+    "qSrcTables": [
+      "Freights"
+    ]
+  },
+  {
+    "qName": "Actual time of departure - Origin - LAND",
+    "qTags": [
+      "$numeric",
+      "$integer",
+      "$ascii",
+      "$text"
+    ],
+    "qSrcTables": [
+      "Freights"
+    ]
+  },
+  {
+    "qName": "Actual time of departure - Origin - SEA",
+    "qTags": [
+      "$numeric",
+      "$integer"
+    ],
+    "qSrcTables": [
+      "Freights"
+    ]
+  },
+  {
+    "qName": "Attestation - AIR",
+    "qTags": [
+      "$ascii",
+      "$text"
+    ],
+    "qSrcTables": [
+      "Freights"
+    ]
+  },
+  {
+    "qName": "BOL Actual Delivery Date",
+    "qTags": [
+      "$numeric",
+      "$integer"
+    ],
+    "qSrcTables": [
+      "Bill_Of_Lading"
+    ]
+  },
+  {
+    "qName": "BOL Created By",
+    "qTags": [
+      "$ascii",
+      "$text"
+    ],
+    "qSrcTables": [
+      "Bill_Of_Lading"
+    ]
+  },
+  {
+    "qName": "BOL Created Date",
+    "qTags": [
+      "$numeric",
+      "$timestamp"
+    ],
+    "qSrcTables": [
+      "Bill_Of_Lading"
+    ]
+  },
+  {
+    "qName": "BOL Key",
+    "qTags": [
+      "$ascii",
+      "$text",
+      "$key"
+    ],
+    "qSrcTables": [
+      "Bill_Of_Lading",
+      "Freights"
+    ]
+  },
+  {
+    "qName": "BOL Requested Delviery Date",
+    "qTags": [
+      "$numeric",
+      "$integer"
+    ],
+    "qSrcTables": [
+      "Bill_Of_Lading"
+    ]
+  },
+  {
+    "qName": "BOL Type - CLEARANCE",
+    "qTags": [
+      "$numeric",
+      "$integer"
+    ],
+    "qSrcTables": [
+      "Freights"
+    ]
+  },
+  {
+    "qName": "Bill Date",
+    "qTags": [
+      "$numeric",
+      "$integer"
+    ],
+    "qSrcTables": [
+      "Bill_Of_Lading"
+    ]
+  },
+  {
+    "qName": "Bill Of Lading - SEA",
+    "qTags": [
+      "$ascii",
+      "$text"
+    ],
+    "qSrcTables": [
+      "Freights"
+    ]
+  },
+  {
+    "qName": "Bill of lading - CLEARANCE",
+    "qTags": [],
+    "qSrcTables": [
+      "Freights"
+    ]
+  },
+  {
+    "qName": "Business Unit Key",
+    "qTags": [
+      "$numeric"
+    ],
+    "qSrcTables": [
+      "Freights"
+    ]
+  },
+  {
+    "qName": "CLD Actual arrival time (ATA) - CLEARANCE",
+    "qTags": [
+      "$numeric",
+      "$integer",
+      "$timestamp",
+      "$date"
+    ],
+    "qSrcTables": [
+      "Freights"
+    ]
+  },
+  {
+    "qName": "CLD Bayan Number - CLEARANCE",
+    "qTags": [],
+    "qSrcTables": [
+      "Freights"
+    ]
+  },
+  {
+    "qName": "CLD Bayan date - CLEARANCE",
+    "qTags": [
+      "$numeric",
+      "$integer",
+      "$ascii",
+      "$text"
+    ],
+    "qSrcTables": [
+      "Freights"
+    ]
+  },
+  {
+    "qName": "CLD Broker name - CLEARANCE",
+    "qTags": [
+      "$ascii",
+      "$text"
+    ],
+    "qSrcTables": [
+      "Freights"
+    ]
+  },
+  {
+    "qName": "CLD Clearance Date - CLEARANCE",
+    "qTags": [
+      "$numeric",
+      "$integer"
+    ],
+    "qSrcTables": [
+      "Freights"
+    ]
+  },
+  {
+    "qName": "CLD Clearance Details - CLEARANCE",
+    "qTags": [
+      "$ascii",
+      "$text"
+    ],
+    "qSrcTables": [
+      "Freights"
+    ]
+  },
+  {
+    "qName": "CLD Clearance Invoice Number - CLEARANCE",
+    "qTags": [
+      "$ascii",
+      "$text"
+    ],
+    "qSrcTables": [
+      "Freights"
+    ]
+  },
+  {
+    "qName": "CLD Delivery Terms - CLEARANCE",
+    "qTags": [
+      "$ascii",
+      "$text"
+    ],
+    "qSrcTables": [
+      "Freights"
+    ]
+  },
+  {
+    "qName": "CLD Exchange Bill of Ladding - CLEARANCE",
+    "qTags": [],
+    "qSrcTables": [
+      "Freights"
+    ]
+  },
+  {
+    "qName": "CLD REason For Rejection - CLEARANCE",
+    "qTags": [
+      "$ascii",
+      "$text"
+    ],
+    "qSrcTables": [
+      "Freights"
+    ]
+  },
+  {
+    "qName": "CLD Remarks - CLEARANCE",
+    "qTags": [],
+    "qSrcTables": [
+      "Freights"
+    ]
+  },
+  {
+    "qName": "CLD Sadad Date - CLEARANCE",
+    "qTags": [
+      "$numeric",
+      "$integer",
+      "$timestamp",
+      "$date"
+    ],
+    "qSrcTables": [
+      "Freights"
+    ]
+  },
+  {
+    "qName": "CLD Status of Request - CLEARANCE",
+    "qTags": [
+      "$ascii",
+      "$text"
+    ],
+    "qSrcTables": [
+      "Freights"
+    ]
+  },
+  {
+    "qName": "CR copy - AIR",
+    "qTags": [
+      "$ascii",
+      "$text"
+    ],
+    "qSrcTables": [
+      "Freights"
+    ]
+  },
+  {
+    "qName": "Cargo Net Weight - LAND",
+    "qTags": [
+      "$numeric"
+    ],
+    "qSrcTables": [
+      "Freights"
+    ]
+  },
+  {
+    "qName": "Cargo Num of Pallets - LAND",
+    "qTags": [
+      "$numeric",
+      "$integer"
+    ],
+    "qSrcTables": [
+      "Freights"
+    ]
+  },
+  {
+    "qName": "Cargo Num of Trucks - LAND",
+    "qTags": [
+      "$numeric",
+      "$integer"
+    ],
+    "qSrcTables": [
+      "Freights"
+    ]
+  },
+  {
+    "qName": "Cargo Type - LAND",
+    "qTags": [
+      "$ascii",
+      "$text"
+    ],
+    "qSrcTables": [
+      "Freights"
+    ]
+  },
+  {
+    "qName": "Cargo Value - LAND",
+    "qTags": [
+      "$numeric",
+      "$integer"
+    ],
+    "qSrcTables": [
+      "Freights"
+    ]
+  },
+  {
+    "qName": "Carrier Name - SEA",
+    "qTags": [
+      "$text"
+    ],
+    "qSrcTables": [
+      "Freights"
+    ]
+  },
+  {
+    "qName": "Certificate of Conformity - AIR",
+    "qTags": [
+      "$ascii",
+      "$text"
+    ],
+    "qSrcTables": [
+      "Freights"
+    ]
+  },
+  {
+    "qName": "Certificate of Origin - AIR",
+    "qTags": [
+      "$ascii",
+      "$text"
+    ],
+    "qSrcTables": [
+      "Freights"
+    ]
+  },
+  {
+    "qName": "Certificate of Origin - CLEARANCE",
+    "qTags": [
+      "$ascii",
+      "$text"
+    ],
+    "qSrcTables": [
+      "Freights"
+    ]
+  },
+  {
+    "qName": "Chargeable Weight - AIR",
+    "qTags": [
+      "$numeric"
+    ],
+    "qSrcTables": [
+      "Freights"
+    ]
+  },
+  {
+    "qName": "Clearance Purchase Order - CLEARANCE",
+    "qTags": [],
+    "qSrcTables": [
+      "Freights"
+    ]
+  },
+  {
+    "qName": "Commercial Invoice - AIR",
+    "qTags": [
+      "$ascii",
+      "$text"
+    ],
+    "qSrcTables": [
+      "Freights"
+    ]
+  },
+  {
+    "qName": "Commercial Invoice Number - CLEARANCE",
+    "qTags": [],
+    "qSrcTables": [
+      "Freights"
+    ]
+  },
+  {
+    "qName": "Confirmed W/H Delivery Date - CLEARANCE",
+    "qTags": [
+      "$numeric",
+      "$integer"
+    ],
+    "qSrcTables": [
+      "Freights"
+    ]
+  },
+  {
+    "qName": "Consignee Address - CLEARANCE",
+    "qTags": [],
+    "qSrcTables": [
+      "Freights"
+    ]
+  },
+  {
+    "qName": "Consignee Address - LAND",
+    "qTags": [
+      "$ascii",
+      "$text"
+    ],
+    "qSrcTables": [
+      "Freights"
+    ]
+  },
+  {
+    "qName": "Consignee Contact - LAND",
+    "qTags": [],
+    "qSrcTables": [
+      "Freights"
+    ]
+  },
+  {
+    "qName": "Consignee Name - LAND",
+    "qTags": [],
+    "qSrcTables": [
+      "Freights"
+    ]
+  },
+  {
+    "qName": "Consignee name - CLEARANCE",
+    "qTags": [
+      "$ascii",
+      "$text"
+    ],
+    "qSrcTables": [
+      "Freights"
+    ]
+  },
+  {
+    "qName": "Container Code - CLEARANCE",
+    "qTags": [],
+    "qSrcTables": [
+      "Freights"
+    ]
+  },
+  {
+    "qName": "Container Delivery Date",
+    "qTags": [
+      "$numeric",
+      "$integer"
+    ],
+    "qSrcTables": [
+      "Bill_Of_Lading"
+    ]
+  },
+  {
+    "qName": "Container Number",
+    "qTags": [
+      "$text"
+    ],
+    "qSrcTables": [
+      "Bill_Of_Lading"
+    ]
+  },
+  {
+    "qName": "Container Per Size - SEA",
+    "qTags": [
+      "$numeric",
+      "$integer"
+    ],
+    "qSrcTables": [
+      "Freights"
+    ]
+  },
+  {
+    "qName": "Container size - SEA",
+    "qTags": [
+      "$ascii",
+      "$text"
+    ],
+    "qSrcTables": [
+      "Freights"
+    ]
+  },
+  {
+    "qName": "Country Region - SEA",
+    "qTags": [
+      "$text"
+    ],
+    "qSrcTables": [
+      "Freights"
+    ]
+  },
+  {
+    "qName": "Country of Origin - CLEARANCE",
+    "qTags": [
+      "$ascii",
+      "$text"
+    ],
+    "qSrcTables": [
+      "Freights"
+    ]
+  },
+  {
+    "qName": "Currency - SEA",
+    "qTags": [
+      "$ascii",
+      "$text"
+    ],
+    "qSrcTables": [
+      "Freights"
+    ]
+  },
+  {
+    "qName": "Customer Account Number",
+    "qTags": [
+      "$ascii",
+      "$text"
+    ],
+    "qSrcTables": [
+      "Customers"
+    ]
+  },
+  {
+    "qName": "Customer Address",
+    "qTags": [
+      "$ascii",
+      "$text"
+    ],
+    "qSrcTables": [
+      "Customers"
+    ]
+  },
+  {
+    "qName": "Customer City",
+    "qTags": [
+      "$ascii",
+      "$text"
+    ],
+    "qSrcTables": [
+      "Customers"
+    ]
+  },
+  {
+    "qName": "Customer Country Region ID",
+    "qTags": [
+      "$ascii",
+      "$text"
+    ],
+    "qSrcTables": [
+      "Customers"
+    ]
+  },
+  {
+    "qName": "Customer Credit Limit",
+    "qTags": [
+      "$numeric",
+      "$integer"
+    ],
+    "qSrcTables": [
+      "Customers"
+    ]
+  },
+  {
+    "qName": "Customer Currency",
+    "qTags": [
+      "$ascii",
+      "$text"
+    ],
+    "qSrcTables": [
+      "Customers"
+    ]
+  },
+  {
+    "qName": "Customer Delivery Term",
+    "qTags": [
+      "$ascii",
+      "$text"
+    ],
+    "qSrcTables": [
+      "Customers"
+    ]
+  },
+  {
+    "qName": "Customer Email",
+    "qTags": [
+      "$ascii",
+      "$text"
+    ],
+    "qSrcTables": [
+      "Customers"
+    ]
+  },
+  {
+    "qName": "Customer Group",
+    "qTags": [
+      "$ascii",
+      "$text"
+    ],
+    "qSrcTables": [
+      "Customers"
+    ]
+  },
+  {
+    "qName": "Customer Insurance Provider",
+    "qTags": [
+      "$ascii",
+      "$text"
+    ],
+    "qSrcTables": [
+      "Customers"
+    ]
+  },
+  {
+    "qName": "Customer Invent Location",
+    "qTags": [
+      "$ascii",
+      "$text"
+    ],
+    "qSrcTables": [
+      "Customers"
+    ]
+  },
+  {
+    "qName": "Customer Key",
+    "qTags": [
+      "$ascii",
+      "$text",
+      "$key"
+    ],
+    "qSrcTables": [
+      "Customers",
+      "Freights"
+    ]
+  },
+  {
+    "qName": "Customer Name",
+    "qTags": [
+      "$ascii",
+      "$text"
+    ],
+    "qSrcTables": [
+      "Customers"
+    ]
+  },
+  {
+    "qName": "Customer Original Name",
+    "qTags": [
+      "$text"
+    ],
+    "qSrcTables": [
+      "Customers"
+    ]
+  },
+  {
+    "qName": "Customer Payment Mode",
+    "qTags": [
+      "$ascii",
+      "$text"
+    ],
+    "qSrcTables": [
+      "Customers"
+    ]
+  },
+  {
+    "qName": "Customer Payment Term",
+    "qTags": [
+      "$ascii",
+      "$text"
+    ],
+    "qSrcTables": [
+      "Customers"
+    ]
+  },
+  {
+    "qName": "Customer Phone",
+    "qTags": [
+      "$numeric",
+      "$integer"
+    ],
+    "qSrcTables": [
+      "Customers"
+    ]
+  },
+  {
+    "qName": "Customer State",
+    "qTags": [
+      "$ascii",
+      "$text"
+    ],
+    "qSrcTables": [
+      "Customers"
+    ]
+  },
+  {
+    "qName": "Customer Statistics Group",
+    "qTags": [
+      "$ascii",
+      "$text"
+    ],
+    "qSrcTables": [
+      "Customers"
+    ]
+  },
+  {
+    "qName": "Customer Street",
+    "qTags": [
+      "$ascii",
+      "$text"
+    ],
+    "qSrcTables": [
+      "Customers"
+    ]
+  },
+  {
+    "qName": "Customer Telefax",
+    "qTags": [
+      "$numeric",
+      "$integer"
+    ],
+    "qSrcTables": [
+      "Customers"
+    ]
+  },
+  {
+    "qName": "DG Cargo Permit - AIR",
+    "qTags": [
+      "$ascii",
+      "$text"
+    ],
+    "qSrcTables": [
+      "Freights"
+    ]
+  },
+  {
+    "qName": "Day",
+    "qTags": [
+      "$numeric",
+      "$integer"
+    ],
+    "qSrcTables": [
+      "Master_Calendar"
+    ]
+  },
+  {
+    "qName": "Delivery Term - AIR",
+    "qTags": [
+      "$ascii",
+      "$text"
+    ],
+    "qSrcTables": [
+      "Freights"
+    ]
+  },
+  {
+    "qName": "Delivery Term - SEA",
+    "qTags": [
+      "$ascii",
+      "$text"
+    ],
+    "qSrcTables": [
+      "Freights"
+    ]
+  },
+  {
+    "qName": "Delivery container code - CLEARANCE",
+    "qTags": [],
+    "qSrcTables": [
+      "Freights"
+    ]
+  },
+  {
+    "qName": "Description - CLEARANCE",
+    "qTags": [
+      "$text"
+    ],
+    "qSrcTables": [
+      "Freights"
+    ]
+  },
+  {
+    "qName": "Destination Country - LAND",
+    "qTags": [
+      "$ascii",
+      "$text"
+    ],
+    "qSrcTables": [
+      "Freights"
+    ]
+  },
+  {
+    "qName": "Destination Port - AIR",
+    "qTags": [
+      "$ascii",
+      "$text"
+    ],
+    "qSrcTables": [
+      "Freights"
+    ]
+  },
+  {
+    "qName": "Destination Port - LAND",
+    "qTags": [
+      "$ascii",
+      "$text"
+    ],
+    "qSrcTables": [
+      "Freights"
+    ]
+  },
+  {
+    "qName": "Destination Port - SEA",
+    "qTags": [
+      "$ascii",
+      "$text"
+    ],
+    "qSrcTables": [
+      "Freights"
+    ]
+  },
+  {
+    "qName": "Destination Port Charge - SEA",
+    "qTags": [
+      "$numeric",
+      "$integer"
+    ],
+    "qSrcTables": [
+      "Freights"
+    ]
+  },
+  {
+    "qName": "Dimensions of the Shipment - AIR",
+    "qTags": [],
+    "qSrcTables": [
+      "Freights"
+    ]
+  },
+  {
+    "qName": "Discount Amount",
+    "qTags": [
+      "$numeric",
+      "$integer"
+    ],
+    "qSrcTables": [
+      "PurchLine"
+    ]
+  },
+  {
+    "qName": "Discount Percent",
+    "qTags": [
+      "$numeric"
+    ],
+    "qSrcTables": [
+      "PurchLine"
+    ]
+  },
+  {
+    "qName": "Discrepancies - AIR",
+    "qTags": [
+      "$ascii",
+      "$text"
+    ],
+    "qSrcTables": [
+      "Freights"
+    ]
+  },
+  {
+    "qName": "Division",
+    "qTags": [
+      "$ascii",
+      "$text"
+    ],
+    "qSrcTables": [
+      "Customers"
+    ]
+  },
+  {
+    "qName": "Doc Bill of Lading - CLEARANCE",
+    "qTags": [
+      "$ascii",
+      "$text"
+    ],
+    "qSrcTables": [
+      "Freights"
+    ]
+  },
+  {
+    "qName": "Duty Amount - SEA",
+    "qTags": [
+      "$numeric",
+      "$integer"
+    ],
+    "qSrcTables": [
+      "Freights"
+    ]
+  },
+  {
+    "qName": "Duty Exemption Status  - AIR",
+    "qTags": [],
+    "qSrcTables": [
+      "Freights"
+    ]
+  },
+  {
+    "qName": "Est. time of arrival - Destination - AIR",
+    "qTags": [
+      "$numeric",
+      "$integer",
+      "$timestamp",
+      "$date"
+    ],
+    "qSrcTables": [
+      "Freights"
+    ]
+  },
+  {
+    "qName": "Est. time of arrival - Destination - LAND",
+    "qTags": [
+      "$numeric",
+      "$integer",
+      "$ascii",
+      "$text"
+    ],
+    "qSrcTables": [
+      "Freights"
+    ]
+  },
+  {
+    "qName": "Est. time of arrival - Destination - SEA",
+    "qTags": [
+      "$numeric",
+      "$integer",
+      "$timestamp",
+      "$date"
+    ],
+    "qSrcTables": [
+      "Freights"
+    ]
+  },
+  {
+    "qName": "Est. time of arrival - Origin - AIR",
+    "qTags": [
+      "$numeric",
+      "$integer"
+    ],
+    "qSrcTables": [
+      "Freights"
+    ]
+  },
+  {
+    "qName": "Est. time of arrival - Origin - LAND",
+    "qTags": [
+      "$numeric",
+      "$integer",
+      "$ascii",
+      "$text"
+    ],
+    "qSrcTables": [
+      "Freights"
+    ]
+  },
+  {
+    "qName": "Est. time of arrival - Origin - SEA",
+    "qTags": [
+      "$numeric",
+      "$integer"
+    ],
+    "qSrcTables": [
+      "Freights"
+    ]
+  },
+  {
+    "qName": "Est. time of arrival - Transit - AIR",
+    "qTags": [
+      "$numeric",
+      "$integer"
+    ],
+    "qSrcTables": [
+      "Freights"
+    ]
+  },
+  {
+    "qName": "Est. time of arrival - Transit - LAND",
+    "qTags": [
+      "$numeric",
+      "$integer",
+      "$ascii",
+      "$text"
+    ],
+    "qSrcTables": [
+      "Freights"
+    ]
+  },
+  {
+    "qName": "Est. time of arrival - Transit - SEA",
+    "qTags": [
+      "$numeric",
+      "$integer"
+    ],
+    "qSrcTables": [
+      "Freights"
+    ]
+  },
+  {
+    "qName": "Est. time of departure - Origin - AIR",
+    "qTags": [
+      "$numeric",
+      "$integer",
+      "$timestamp",
+      "$date"
+    ],
+    "qSrcTables": [
+      "Freights"
+    ]
+  },
+  {
+    "qName": "Est. time of departure - Origin - LAND",
+    "qTags": [
+      "$numeric",
+      "$integer",
+      "$ascii",
+      "$text"
+    ],
+    "qSrcTables": [
+      "Freights"
+    ]
+  },
+  {
+    "qName": "Est. time of departure - Origin - SEA",
+    "qTags": [
+      "$numeric",
+      "$integer"
+    ],
+    "qSrcTables": [
+      "Freights"
+    ]
+  },
+  {
+    "qName": "Est. time of shippment - Transit - AIR",
+    "qTags": [
+      "$numeric",
+      "$integer"
+    ],
+    "qSrcTables": [
+      "Freights"
+    ]
+  },
+  {
+    "qName": "Est. time of shippment - Transit - LAND",
+    "qTags": [
+      "$numeric",
+      "$integer",
+      "$ascii",
+      "$text"
+    ],
+    "qSrcTables": [
+      "Freights"
+    ]
+  },
+  {
+    "qName": "Est. time of shippment - Transit - SEA",
+    "qTags": [
+      "$numeric",
+      "$integer"
+    ],
+    "qSrcTables": [
+      "Freights"
+    ]
+  },
+  {
+    "qName": "Estimated Time of Arrival - CLEARANCE",
+    "qTags": [
+      "$numeric",
+      "$integer",
+      "$timestamp",
+      "$date"
+    ],
+    "qSrcTables": [
+      "Freights"
+    ]
+  },
+  {
+    "qName": "Exchange Rate Date",
+    "qTags": [
+      "$numeric",
+      "$integer",
+      "$timestamp",
+      "$date"
+    ],
+    "qSrcTables": [
+      "Purchase_Orders"
+    ]
+  },
+  {
+    "qName": "Exempted - CLEARANCE",
+    "qTags": [
+      "$ascii",
+      "$text"
+    ],
+    "qSrcTables": [
+      "Freights"
+    ]
+  },
+  {
+    "qName": "Exemption - CLEARANCE",
+    "qTags": [
+      "$ascii",
+      "$text"
+    ],
+    "qSrcTables": [
+      "Freights"
+    ]
+  },
+  {
+    "qName": "Explanation Letter - AIR",
+    "qTags": [
+      "$ascii",
+      "$text"
+    ],
+    "qSrcTables": [
+      "Freights"
+    ]
+  },
+  {
+    "qName": "Export Arabic Letter - AIR",
+    "qTags": [
+      "$ascii",
+      "$text"
+    ],
+    "qSrcTables": [
+      "Freights"
+    ]
+  },
+  {
+    "qName": "External Reference",
+    "qTags": [],
+    "qSrcTables": [
+      "PurchLine"
+    ]
+  },
+  {
+    "qName": "Final Destination - CLEARANCE",
+    "qTags": [
+      "$ascii",
+      "$text"
+    ],
+    "qSrcTables": [
+      "Freights"
+    ]
+  },
+  {
+    "qName": "Final Destination - LAND",
+    "qTags": [
+      "$text"
+    ],
+    "qSrcTables": [
+      "Freights"
+    ]
+  },
+  {
+    "qName": "FinalDate",
+    "qTags": [
+      "$numeric",
+      "$integer",
+      "$timestamp",
+      "$date"
+    ],
+    "qSrcTables": [
+      "Freights"
+    ]
+  },
+  {
+    "qName": "Free On Board - SEA",
+    "qTags": [
+      "$numeric",
+      "$integer"
+    ],
+    "qSrcTables": [
+      "Freights"
+    ]
+  },
+  {
+    "qName": "Free time - Port of destination - SEA",
+    "qTags": [
+      "$numeric",
+      "$integer"
+    ],
+    "qSrcTables": [
+      "Freights"
+    ]
+  },
+  {
+    "qName": "Free time - Port of loading - SEA",
+    "qTags": [
+      "$numeric",
+      "$integer"
+    ],
+    "qSrcTables": [
+      "Freights"
+    ]
+  },
+  {
+    "qName": "Freight Cost - SEA",
+    "qTags": [
+      "$numeric",
+      "$integer"
+    ],
+    "qSrcTables": [
+      "Freights"
+    ]
+  },
+  {
+    "qName": "Freight Cost Per KG - SEA",
+    "qTags": [
+      "$numeric",
+      "$integer"
+    ],
+    "qSrcTables": [
+      "Freights"
+    ]
+  },
+  {
+    "qName": "Freight Per Pallet - SEA",
+    "qTags": [
+      "$ascii",
+      "$text"
+    ],
+    "qSrcTables": [
+      "Freights"
+    ]
+  },
+  {
+    "qName": "Freight Type",
+    "qTags": [
+      "$ascii",
+      "$text"
+    ],
+    "qSrcTables": [
+      "Freights"
+    ]
+  },
+  {
+    "qName": "From Date - SEA",
+    "qTags": [
+      "$numeric",
+      "$integer"
+    ],
+    "qSrcTables": [
+      "Freights"
+    ]
+  },
+  {
+    "qName": "Gross Weight - AIR",
+    "qTags": [
+      "$numeric"
+    ],
+    "qSrcTables": [
+      "Freights"
+    ]
+  },
+  {
+    "qName": "HS Code - AIR",
+    "qTags": [],
+    "qSrcTables": [
+      "Freights"
+    ]
+  },
+  {
+    "qName": "HS code - CLEARANCE",
+    "qTags": [],
+    "qSrcTables": [
+      "Freights"
+    ]
+  },
+  {
+    "qName": "INTTRA Arrival Actual",
+    "qTags": [
+      "$numeric"
+    ],
+    "qSrcTables": [
+      "IntraaDetails"
+    ]
+  },
+  {
+    "qName": "INTTRA ArrivalEstimated",
+    "qTags": [
+      "$numeric"
+    ],
+    "qSrcTables": [
+      "IntraaDetails"
+    ]
+  },
+  {
+    "qName": "INTTRA Bill of Lading Number",
+    "qTags": [
+      "$ascii",
+      "$text"
+    ],
+    "qSrcTables": [
+      "IntraaDetails"
+    ]
+  },
+  {
+    "qName": "INTTRA Business Unit",
+    "qTags": [
+      "$ascii",
+      "$text"
+    ],
+    "qSrcTables": [
+      "IntraaDetails"
+    ]
+  },
+  {
+    "qName": "INTTRA Carrier",
+    "qTags": [
+      "$ascii",
+      "$text"
+    ],
+    "qSrcTables": [
+      "IntraaDetails"
+    ]
+  },
+  {
+    "qName": "INTTRA Container Number",
+    "qTags": [
+      "$ascii",
+      "$text"
+    ],
+    "qSrcTables": [
+      "IntraaDetails"
+    ]
+  },
+  {
+    "qName": "INTTRA Country",
+    "qTags": [
+      "$ascii",
+      "$text"
+    ],
+    "qSrcTables": [
+      "IntraaDetails"
+    ]
+  },
+  {
+    "qName": "INTTRA Creation Date",
+    "qTags": [
+      "$numeric",
+      "$timestamp"
+    ],
+    "qSrcTables": [
+      "IntraaDetails"
+    ]
+  },
+  {
+    "qName": "INTTRA DATAAREAID",
+    "qTags": [
+      "$numeric",
+      "$integer"
+    ],
+    "qSrcTables": [
+      "IntraaDetails"
+    ]
+  },
+  {
+    "qName": "INTTRA Departure Actual",
+    "qTags": [
+      "$numeric"
+    ],
+    "qSrcTables": [
+      "IntraaDetails"
+    ]
+  },
+  {
+    "qName": "INTTRA DepartureEstimated",
+    "qTags": [
+      "$numeric"
+    ],
+    "qSrcTables": [
+      "IntraaDetails"
+    ]
+  },
+  {
+    "qName": "INTTRA Event Details",
+    "qTags": [
+      "$ascii",
+      "$text"
+    ],
+    "qSrcTables": [
+      "IntraaDetails"
+    ]
+  },
+  {
+    "qName": "INTTRA Event Location Code",
+    "qTags": [
+      "$ascii",
+      "$text"
+    ],
+    "qSrcTables": [
+      "IntraaDetails"
+    ]
+  },
+  {
+    "qName": "INTTRA Event Location Country",
+    "qTags": [
+      "$ascii",
+      "$text"
+    ],
+    "qSrcTables": [
+      "IntraaDetails"
+    ]
+  },
+  {
+    "qName": "INTTRA Event Location Name",
+    "qTags": [
+      "$ascii",
+      "$text"
+    ],
+    "qSrcTables": [
+      "IntraaDetails"
+    ]
+  },
+  {
+    "qName": "INTTRA Napco Business Unit Name",
+    "qTags": [
+      "$ascii",
+      "$text"
+    ],
+    "qSrcTables": [
+      "IntraaDetails"
+    ]
+  },
+  {
+    "qName": "INTTRA Napco Vendor Name",
+    "qTags": [
+      "$text"
+    ],
+    "qSrcTables": [
+      "IntraaDetails"
+    ]
+  },
+  {
+    "qName": "INTTRA PO Date",
+    "qTags": [
+      "$numeric",
+      "$timestamp"
+    ],
+    "qSrcTables": [
+      "IntraaDetails"
+    ]
+  },
+  {
+    "qName": "INTTRA PO Delivery Date",
+    "qTags": [
+      "$numeric",
+      "$integer",
+      "$timestamp",
+      "$date"
+    ],
+    "qSrcTables": [
+      "IntraaDetails"
+    ]
+  },
+  {
+    "qName": "INTTRA PurchID",
+    "qTags": [
+      "$key"
+    ],
+    "qSrcTables": [
+      "IntraaDetails",
+      "All_PO_Details"
+    ]
+  },
+  {
+    "qName": "INTTRA Step Number",
+    "qTags": [
+      "$ascii",
+      "$text"
+    ],
+    "qSrcTables": [
+      "IntraaDetails"
+    ]
+  },
+  {
+    "qName": "INTTRA-BU Bill of Lading Number",
+    "qTags": [],
+    "qSrcTables": [
+      "All_PO_Details"
+    ]
+  },
+  {
+    "qName": "INTTRA-BU Business Unit",
+    "qTags": [
+      "$ascii",
+      "$text"
+    ],
+    "qSrcTables": [
+      "All_PO_Details"
+    ]
+  },
+  {
+    "qName": "INTTRA-BU Container Number",
+    "qTags": [
+      "$ascii",
+      "$text"
+    ],
+    "qSrcTables": [
+      "All_PO_Details"
+    ]
+  },
+  {
+    "qName": "INTTRA-BU Napco Vendor Name",
+    "qTags": [
+      "$text"
+    ],
+    "qSrcTables": [
+      "All_PO_Details"
+    ]
+  },
+  {
+    "qName": "INTTRA-BU PO Date",
+    "qTags": [
+      "$numeric",
+      "$timestamp"
+    ],
+    "qSrcTables": [
+      "All_PO_Details"
+    ]
+  },
+  {
+    "qName": "INTTRA-BU PO Delivery Date",
+    "qTags": [
+      "$numeric",
+      "$integer",
+      "$timestamp",
+      "$date"
+    ],
+    "qSrcTables": [
+      "All_PO_Details"
+    ]
+  },
+  {
+    "qName": "InLand Haulages - SEA",
+    "qTags": [
+      "$numeric",
+      "$integer"
+    ],
+    "qSrcTables": [
+      "Freights"
+    ]
+  },
+  {
+    "qName": "Insurance - SEA",
+    "qTags": [
+      "$numeric",
+      "$integer"
+    ],
+    "qSrcTables": [
+      "Freights"
+    ]
+  },
+  {
+    "qName": "Insurance status - AIR",
+    "qTags": [
+      "$ascii",
+      "$text"
+    ],
+    "qSrcTables": [
+      "Freights"
+    ]
+  },
+  {
+    "qName": "Inte Company Customer Account",
+    "qTags": [
+      "$ascii",
+      "$text"
+    ],
+    "qSrcTables": [
+      "Purchase_Orders"
+    ]
+  },
+  {
+    "qName": "Inter Company Sales Order",
+    "qTags": [
+      "$ascii",
+      "$text"
+    ],
+    "qSrcTables": [
+      "Purchase_Orders"
+    ]
+  },
+  {
+    "qName": "IntraLineKey",
+    "qTags": [
+      "$ascii",
+      "$text"
+    ],
+    "qSrcTables": [
+      "IntraaDetails"
+    ]
+  },
+  {
+    "qName": "Invoice - CLEARANCE",
+    "qTags": [
+      "$ascii",
+      "$text"
+    ],
+    "qSrcTables": [
+      "Freights"
+    ]
+  },
+  {
+    "qName": "Invoice Value - AIR",
+    "qTags": [
+      "$numeric"
+    ],
+    "qSrcTables": [
+      "Freights"
+    ]
+  },
+  {
+    "qName": "Iqama - AIR",
+    "qTags": [
+      "$ascii",
+      "$text"
+    ],
+    "qSrcTables": [
+      "Freights"
+    ]
+  },
+  {
+    "qName": "Item Density",
+    "qTags": [
+      "$numeric",
+      "$integer"
+    ],
+    "qSrcTables": [
+      "Items"
+    ]
+  },
+  {
+    "qName": "Item Depth",
+    "qTags": [
+      "$numeric",
+      "$integer"
+    ],
+    "qSrcTables": [
+      "Items"
+    ]
+  },
+  {
+    "qName": "Item Group ID",
+    "qTags": [
+      "$ascii",
+      "$text"
+    ],
+    "qSrcTables": [
+      "Items"
+    ]
+  },
+  {
+    "qName": "Item Height",
+    "qTags": [
+      "$numeric",
+      "$integer"
+    ],
+    "qSrcTables": [
+      "Items"
+    ]
+  },
+  {
+    "qName": "Item ID",
+    "qTags": [
+      "$ascii",
+      "$text"
+    ],
+    "qSrcTables": [
+      "Items"
+    ]
+  },
+  {
+    "qName": "Item Key",
+    "qTags": [
+      "$ascii",
+      "$text",
+      "$key"
+    ],
+    "qSrcTables": [
+      "PurchLine",
+      "Items"
+    ]
+  },
+  {
+    "qName": "Item Name",
+    "qTags": [
+      "$ascii",
+      "$text"
+    ],
+    "qSrcTables": [
+      "Items"
+    ]
+  },
+  {
+    "qName": "Item Net Weight",
+    "qTags": [
+      "$numeric",
+      "$integer"
+    ],
+    "qSrcTables": [
+      "Items"
+    ]
+  },
+  {
+    "qName": "Item Unit Volume",
+    "qTags": [
+      "$numeric",
+      "$integer"
+    ],
+    "qSrcTables": [
+      "Items"
+    ]
+  },
+  {
+    "qName": "Item Width",
+    "qTags": [
+      "$numeric",
+      "$integer"
+    ],
+    "qSrcTables": [
+      "Items"
+    ]
+  },
+  {
+    "qName": "Loading Port - AIR",
+    "qTags": [
+      "$ascii",
+      "$text"
+    ],
+    "qSrcTables": [
+      "Freights"
+    ]
+  },
+  {
+    "qName": "Loading Port - SEA",
+    "qTags": [
+      "$ascii",
+      "$text"
+    ],
+    "qSrcTables": [
+      "Freights"
+    ]
+  },
+  {
+    "qName": "Loading Site - LAND",
+    "qTags": [
+      "$ascii",
+      "$text"
+    ],
+    "qSrcTables": [
+      "Freights"
+    ]
+  },
+  {
+    "qName": "Loading Site - SEA",
+    "qTags": [
+      "$ascii",
+      "$text"
+    ],
+    "qSrcTables": [
+      "Freights"
+    ]
+  },
+  {
+    "qName": "MOI - AIR",
+    "qTags": [
+      "$ascii",
+      "$text"
+    ],
+    "qSrcTables": [
+      "Freights"
+    ]
+  },
+  {
+    "qName": "MSDS - AIR",
+    "qTags": [
+      "$ascii",
+      "$text"
+    ],
+    "qSrcTables": [
+      "Freights"
+    ]
+  },
+  {
+    "qName": "Master Calendar Date",
+    "qTags": [
+      "$numeric",
+      "$integer",
+      "$timestamp",
+      "$date"
+    ],
+    "qSrcTables": [
+      "Master_Calendar"
+    ]
+  },
+  {
+    "qName": "Master Calendar Date Num",
+    "qTags": [
+      "$numeric",
+      "$integer",
+      "$timestamp",
+      "$date",
+      "$key"
+    ],
+    "qSrcTables": [
+      "Master_Calendar",
+      "Freights"
+    ]
+  },
+  {
+    "qName": "Mixed Security Key",
+    "qTags": [
+      "$ascii",
+      "$text"
+    ],
+    "qSrcTables": [
+      "Customers"
+    ]
+  },
+  {
+    "qName": "Modified Date",
+    "qTags": [
+      "$numeric",
+      "$timestamp"
+    ],
+    "qSrcTables": [
+      "Bill_Of_Lading"
+    ]
+  },
+  {
+    "qName": "Month",
+    "qTags": [
+      "$numeric",
+      "$integer"
+    ],
+    "qSrcTables": [
+      "Master_Calendar"
+    ]
+  },
+  {
+    "qName": "Month Day",
+    "qTags": [
+      "$ascii",
+      "$text"
+    ],
+    "qSrcTables": [
+      "Master_Calendar"
+    ]
+  },
+  {
+    "qName": "Month ID",
+    "qTags": [
+      "$numeric",
+      "$integer"
+    ],
+    "qSrcTables": [
+      "Master_Calendar"
+    ]
+  },
+  {
+    "qName": "Month ID - This Month",
+    "qTags": [
+      "$numeric",
+      "$integer"
+    ],
+    "qSrcTables": [
+      "Master_Calendar"
+    ]
+  },
+  {
+    "qName": "Month Num",
+    "qTags": [
+      "$numeric",
+      "$integer"
+    ],
+    "qSrcTables": [
+      "Master_Calendar"
+    ]
+  },
+  {
+    "qName": "Month Year",
+    "qTags": [
+      "$numeric",
+      "$integer",
+      "$timestamp",
+      "$date"
+    ],
+    "qSrcTables": [
+      "Master_Calendar"
+    ]
+  },
+  {
+    "qName": "Net Weight - SEA",
+    "qTags": [
+      "$numeric",
+      "$integer"
+    ],
+    "qSrcTables": [
+      "Freights"
+    ]
+  },
+  {
+    "qName": "Net weight - AIR",
+    "qTags": [],
+    "qSrcTables": [
+      "Freights"
+    ]
+  },
+  {
+    "qName": "No of Containers - CLEARANCE",
+    "qTags": [
+      "$numeric",
+      "$integer"
+    ],
+    "qSrcTables": [
+      "Freights"
+    ]
+  },
+  {
+    "qName": "No. of Free Time Granted - CLEARANCE",
+    "qTags": [
+      "$numeric",
+      "$integer"
+    ],
+    "qSrcTables": [
+      "Freights"
+    ]
+  },
+  {
+    "qName": "Online Authorization - AIR",
+    "qTags": [
+      "$ascii",
+      "$text"
+    ],
+    "qSrcTables": [
+      "Freights"
+    ]
+  },
+  {
+    "qName": "PL Amount",
+    "qTags": [
+      "$numeric"
+    ],
+    "qSrcTables": [
+      "PurchLine"
+    ]
+  },
+  {
+    "qName": "PL Confirmed Delivery Date",
+    "qTags": [
+      "$numeric",
+      "$integer",
+      "$timestamp",
+      "$date"
+    ],
+    "qSrcTables": [
+      "PurchLine"
+    ]
+  },
+  {
+    "qName": "PL Delivery Date",
+    "qTags": [
+      "$numeric",
+      "$integer",
+      "$timestamp",
+      "$date"
+    ],
+    "qSrcTables": [
+      "PurchLine"
+    ]
+  },
+  {
+    "qName": "PL Delivery Type",
+    "qTags": [
+      "$numeric",
+      "$integer"
+    ],
+    "qSrcTables": [
+      "PurchLine"
+    ]
+  },
+  {
+    "qName": "PL Shipping Date Confirmed",
+    "qTags": [
+      "$numeric",
+      "$integer"
+    ],
+    "qSrcTables": [
+      "PurchLine"
+    ]
+  },
+  {
+    "qName": "PL Shipping Date Requested",
+    "qTags": [
+      "$numeric",
+      "$integer"
+    ],
+    "qSrcTables": [
+      "PurchLine"
+    ]
+  },
+  {
+    "qName": "PO Attachment",
+    "qTags": [
+      "$text"
+    ],
+    "qSrcTables": [
+      "Purchase_Orders"
+    ]
+  },
+  {
+    "qName": "PO Created By",
+    "qTags": [
+      "$ascii",
+      "$text"
+    ],
+    "qSrcTables": [
+      "Purchase_Orders"
+    ]
+  },
+  {
+    "qName": "PO Creation Date",
+    "qTags": [
+      "$numeric",
+      "$timestamp"
+    ],
+    "qSrcTables": [
+      "Purchase_Orders"
+    ]
+  },
+  {
+    "qName": "PO Creation Date - AIR",
+    "qTags": [
+      "$numeric",
+      "$timestamp"
+    ],
+    "qSrcTables": [
+      "Freights"
+    ]
+  },
+  {
+    "qName": "PO Creation Date - SEA",
+    "qTags": [
+      "$numeric",
+      "$timestamp"
+    ],
+    "qSrcTables": [
+      "Freights"
+    ]
+  },
+  {
+    "qName": "PO Currency",
+    "qTags": [
+      "$ascii",
+      "$text"
+    ],
+    "qSrcTables": [
+      "Purchase_Orders"
+    ]
+  },
+  {
+    "qName": "PO Delivery Date",
+    "qTags": [
+      "$numeric",
+      "$integer",
+      "$timestamp",
+      "$date"
+    ],
+    "qSrcTables": [
+      "Purchase_Orders"
+    ]
+  },
+  {
+    "qName": "PO Delivery Terms",
+    "qTags": [
+      "$ascii",
+      "$text"
+    ],
+    "qSrcTables": [
+      "Purchase_Orders"
+    ]
+  },
+  {
+    "qName": "PO Invent Location",
+    "qTags": [
+      "$ascii",
+      "$text"
+    ],
+    "qSrcTables": [
+      "Purchase_Orders"
+    ]
+  },
+  {
+    "qName": "PO Modified By",
+    "qTags": [
+      "$ascii",
+      "$text"
+    ],
+    "qSrcTables": [
+      "Purchase_Orders"
+    ]
+  },
+  {
+    "qName": "PO Modified Date",
+    "qTags": [
+      "$numeric",
+      "$timestamp"
+    ],
+    "qSrcTables": [
+      "Purchase_Orders"
+    ]
+  },
+  {
+    "qName": "PO Payment Terms",
+    "qTags": [
+      "$ascii",
+      "$text"
+    ],
+    "qSrcTables": [
+      "Purchase_Orders"
+    ]
+  },
+  {
+    "qName": "PO Shipping Marks",
+    "qTags": [
+      "$text"
+    ],
+    "qSrcTables": [
+      "Purchase_Orders"
+    ]
+  },
+  {
+    "qName": "PO Status",
+    "qTags": [
+      "$ascii",
+      "$text"
+    ],
+    "qSrcTables": [
+      "Purchase_Orders"
+    ]
+  },
+  {
+    "qName": "Packing Slip - CLEARANCE",
+    "qTags": [
+      "$ascii",
+      "$text"
+    ],
+    "qSrcTables": [
+      "Freights"
+    ]
+  },
+  {
+    "qName": "Pickup Reference - AIR",
+    "qTags": [],
+    "qSrcTables": [
+      "Freights"
+    ]
+  },
+  {
+    "qName": "Planned Pickup Date - AIR",
+    "qTags": [
+      "$numeric",
+      "$integer"
+    ],
+    "qSrcTables": [
+      "Freights"
+    ]
+  },
+  {
+    "qName": "Port Name - SEA",
+    "qTags": [
+      "$ascii",
+      "$text"
+    ],
+    "qSrcTables": [
+      "Freights"
+    ]
+  },
+  {
+    "qName": "Price Unit",
+    "qTags": [
+      "$numeric",
+      "$integer"
+    ],
+    "qSrcTables": [
+      "PurchLine"
+    ]
+  },
+  {
+    "qName": "Purchase Order",
+    "qTags": [
+      "$ascii",
+      "$text"
+    ],
+    "qSrcTables": [
+      "Purchase_Orders"
+    ]
+  },
+  {
+    "qName": "Purchase Order Key",
+    "qTags": [
+      "$ascii",
+      "$text",
+      "$key"
+    ],
+    "qSrcTables": [
+      "Purchase_Orders",
+      "Freights"
+    ]
+  },
+  {
+    "qName": "Purchase Order Key - AIR",
+    "qTags": [
+      "$ascii",
+      "$text"
+    ],
+    "qSrcTables": [
+      "Freights"
+    ]
+  },
+  {
+    "qName": "Purchase Order Key - CLEARANCE",
+    "qTags": [
+      "$ascii",
+      "$text"
+    ],
+    "qSrcTables": [
+      "Freights"
+    ]
+  },
+  {
+    "qName": "Purchase Order Key - LAND",
+    "qTags": [
+      "$ascii",
+      "$text"
+    ],
+    "qSrcTables": [
+      "Freights"
+    ]
+  },
+  {
+    "qName": "Purchase Order Key - SEA",
+    "qTags": [
+      "$ascii",
+      "$text"
+    ],
+    "qSrcTables": [
+      "Freights"
+    ]
+  },
+  {
+    "qName": "Purchase Order Line Key",
+    "qTags": [
+      "$ascii",
+      "$text",
+      "$key"
+    ],
+    "qSrcTables": [
+      "PurchLine",
+      "Freights"
+    ]
+  },
+  {
+    "qName": "Purchase Price",
+    "qTags": [
+      "$numeric"
+    ],
+    "qSrcTables": [
+      "PurchLine"
+    ]
+  },
+  {
+    "qName": "Purchase Type",
+    "qTags": [
+      "$ascii",
+      "$text"
+    ],
+    "qSrcTables": [
+      "PurchLine"
+    ]
+  },
+  {
+    "qName": "Purchase Unit",
+    "qTags": [
+      "$ascii",
+      "$text"
+    ],
+    "qSrcTables": [
+      "PurchLine"
+    ]
+  },
+  {
+    "qName": "Qty / Unit (20\") - SEA",
+    "qTags": [
+      "$numeric",
+      "$integer"
+    ],
+    "qSrcTables": [
+      "Freights"
+    ]
+  },
+  {
+    "qName": "Qty / Unit (40\") - SEA",
+    "qTags": [
+      "$numeric",
+      "$integer"
+    ],
+    "qSrcTables": [
+      "Freights"
+    ]
+  },
+  {
+    "qName": "Quantity Ordered",
+    "qTags": [
+      "$numeric"
+    ],
+    "qSrcTables": [
+      "PurchLine"
+    ]
+  },
+  {
+    "qName": "Quarter",
+    "qTags": [
+      "$ascii",
+      "$text"
+    ],
+    "qSrcTables": [
+      "Master_Calendar"
+    ]
+  },
+  {
+    "qName": "Quarter ID",
+    "qTags": [
+      "$numeric",
+      "$integer"
+    ],
+    "qSrcTables": [
+      "Master_Calendar"
+    ]
+  },
+  {
+    "qName": "Quarter Year",
+    "qTags": [
+      "$ascii",
+      "$text"
+    ],
+    "qSrcTables": [
+      "Master_Calendar"
+    ]
+  },
+  {
+    "qName": "Rate - SEA",
+    "qTags": [
+      "$numeric",
+      "$integer"
+    ],
+    "qSrcTables": [
+      "Freights"
+    ]
+  },
+  {
+    "qName": "Reason For Delay - AIR",
+    "qTags": [
+      "$ascii",
+      "$text"
+    ],
+    "qSrcTables": [
+      "Freights"
+    ]
+  },
+  {
+    "qName": "Remain Purch Physical",
+    "qTags": [
+      "$numeric"
+    ],
+    "qSrcTables": [
+      "PurchLine"
+    ]
+  },
+  {
+    "qName": "Remain Sales Physical",
+    "qTags": [
+      "$numeric",
+      "$integer"
+    ],
+    "qSrcTables": [
+      "Sales_Line"
+    ]
+  },
+  {
+    "qName": "Requested Loading Date - LAND",
+    "qTags": [
+      "$numeric",
+      "$integer",
+      "$ascii",
+      "$text"
+    ],
+    "qSrcTables": [
+      "Freights"
+    ]
+  },
+  {
+    "qName": "Requested W/H Delivery Date - CLEARANCE",
+    "qTags": [
+      "$numeric",
+      "$integer",
+      "$ascii",
+      "$text"
+    ],
+    "qSrcTables": [
+      "Freights"
+    ]
+  },
+  {
+    "qName": "Routing - SEA",
+    "qTags": [
+      "$ascii",
+      "$text"
+    ],
+    "qSrcTables": [
+      "Freights"
+    ]
+  },
+  {
+    "qName": "SASO Certificate - AIR",
+    "qTags": [
+      "$ascii",
+      "$text"
+    ],
+    "qSrcTables": [
+      "Freights"
+    ]
+  },
+  {
+    "qName": "SL Shipping Date Confirmed",
+    "qTags": [
+      "$numeric",
+      "$integer"
+    ],
+    "qSrcTables": [
+      "Sales_Line"
+    ]
+  },
+  {
+    "qName": "SL Shipping Date Requested",
+    "qTags": [
+      "$numeric",
+      "$integer",
+      "$timestamp",
+      "$date"
+    ],
+    "qSrcTables": [
+      "Sales_Line"
+    ]
+  },
+  {
+    "qName": "SO Currency Code",
+    "qTags": [
+      "$ascii",
+      "$text"
+    ],
+    "qSrcTables": [
+      "Sales_Orders"
+    ]
+  },
+  {
+    "qName": "SO Delivery Date",
+    "qTags": [
+      "$numeric",
+      "$integer",
+      "$timestamp",
+      "$date"
+    ],
+    "qSrcTables": [
+      "Sales_Orders"
+    ]
+  },
+  {
+    "qName": "SO Delivery Term",
+    "qTags": [
+      "$ascii",
+      "$text"
+    ],
+    "qSrcTables": [
+      "Sales_Orders"
+    ]
+  },
+  {
+    "qName": "SO Insurance",
+    "qTags": [
+      "$ascii",
+      "$text"
+    ],
+    "qSrcTables": [
+      "Sales_Orders"
+    ]
+  },
+  {
+    "qName": "SO Insured",
+    "qTags": [
+      "$ascii",
+      "$text"
+    ],
+    "qSrcTables": [
+      "Sales_Orders"
+    ]
+  },
+  {
+    "qName": "SO Payment Mode",
+    "qTags": [
+      "$ascii",
+      "$text"
+    ],
+    "qSrcTables": [
+      "Sales_Orders"
+    ]
+  },
+  {
+    "qName": "SO Payment Term",
+    "qTags": [
+      "$ascii",
+      "$text"
+    ],
+    "qSrcTables": [
+      "Sales_Orders"
+    ]
+  },
+  {
+    "qName": "SO Reveipt Date Confirmed",
+    "qTags": [
+      "$numeric",
+      "$integer"
+    ],
+    "qSrcTables": [
+      "Sales_Orders"
+    ]
+  },
+  {
+    "qName": "SO Reveipt Date Requested",
+    "qTags": [
+      "$numeric",
+      "$integer",
+      "$timestamp",
+      "$date"
+    ],
+    "qSrcTables": [
+      "Sales_Orders"
+    ]
+  },
+  {
+    "qName": "SO Segment",
+    "qTags": [
+      "$ascii",
+      "$text"
+    ],
+    "qSrcTables": [
+      "Sales_Orders"
+    ]
+  },
+  {
+    "qName": "SO Shipping Date Confirmed",
+    "qTags": [
+      "$numeric",
+      "$integer"
+    ],
+    "qSrcTables": [
+      "Sales_Orders"
+    ]
+  },
+  {
+    "qName": "SO Shipping Date Requested",
+    "qTags": [
+      "$numeric",
+      "$integer",
+      "$timestamp",
+      "$date"
+    ],
+    "qSrcTables": [
+      "Sales_Orders"
+    ]
+  },
+  {
+    "qName": "SO Status",
+    "qTags": [
+      "$ascii",
+      "$text"
+    ],
+    "qSrcTables": [
+      "Sales_Orders"
+    ]
+  },
+  {
+    "qName": "SO Sub Segment",
+    "qTags": [
+      "$ascii",
+      "$text"
+    ],
+    "qSrcTables": [
+      "Sales_Orders"
+    ]
+  },
+  {
+    "qName": "Sales Order",
+    "qTags": [
+      "$ascii",
+      "$text"
+    ],
+    "qSrcTables": [
+      "Sales_Orders"
+    ]
+  },
+  {
+    "qName": "Sales Order Key",
+    "qTags": [
+      "$ascii",
+      "$text",
+      "$key"
+    ],
+    "qSrcTables": [
+      "Sales_Orders",
+      "Freights"
+    ]
+  },
+  {
+    "qName": "Sales Order Line Key",
+    "qTags": [
+      "$ascii",
+      "$text",
+      "$key"
+    ],
+    "qSrcTables": [
+      "Sales_Orders",
+      "Sales_Line"
+    ]
+  },
+  {
+    "qName": "Sales Price",
+    "qTags": [
+      "$numeric"
+    ],
+    "qSrcTables": [
+      "Sales_Line"
+    ]
+  },
+  {
+    "qName": "Sales Price Unit",
+    "qTags": [
+      "$numeric",
+      "$integer"
+    ],
+    "qSrcTables": [
+      "Sales_Line"
+    ]
+  },
+  {
+    "qName": "Sales Quantity Ordered",
+    "qTags": [
+      "$numeric",
+      "$integer"
+    ],
+    "qSrcTables": [
+      "Sales_Line"
+    ]
+  },
+  {
+    "qName": "Sales Unit",
+    "qTags": [
+      "$ascii",
+      "$text"
+    ],
+    "qSrcTables": [
+      "Sales_Line"
+    ]
+  },
+  {
+    "qName": "Service Provider",
+    "qTags": [
+      "$text"
+    ],
+    "qSrcTables": [
+      "Service_Provider"
+    ]
+  },
+  {
+    "qName": "Service Provider Account",
+    "qTags": [
+      "$ascii",
+      "$text"
+    ],
+    "qSrcTables": [
+      "Service_Provider"
+    ]
+  },
+  {
+    "qName": "Service Provider Address",
+    "qTags": [
+      "$ascii",
+      "$text"
+    ],
+    "qSrcTables": [
+      "Service_Provider"
+    ]
+  },
+  {
+    "qName": "Service Provider Country ID",
+    "qTags": [
+      "$ascii",
+      "$text"
+    ],
+    "qSrcTables": [
+      "Service_Provider"
+    ]
+  },
+  {
+    "qName": "Service Provider County",
+    "qTags": [
+      "$ascii",
+      "$text"
+    ],
+    "qSrcTables": [
+      "Service_Provider"
+    ]
+  },
+  {
+    "qName": "Service Provider Currency",
+    "qTags": [
+      "$ascii",
+      "$text"
+    ],
+    "qSrcTables": [
+      "Service_Provider"
+    ]
+  },
+  {
+    "qName": "Service Provider Group",
+    "qTags": [
+      "$ascii",
+      "$text"
+    ],
+    "qSrcTables": [
+      "Service_Provider"
+    ]
+  },
+  {
+    "qName": "Service Provider Key",
+    "qTags": [
+      "$ascii",
+      "$text",
+      "$key"
+    ],
+    "qSrcTables": [
+      "Service_Provider",
+      "Freights"
+    ]
+  },
+  {
+    "qName": "Service Provider State",
+    "qTags": [
+      "$ascii",
+      "$text"
+    ],
+    "qSrcTables": [
+      "Service_Provider"
+    ]
+  },
+  {
+    "qName": "Shipment Nature - AIR",
+    "qTags": [
+      "$ascii",
+      "$text"
+    ],
+    "qSrcTables": [
+      "Freights"
+    ]
+  },
+  {
+    "qName": "Shipping Carrier - SEA",
+    "qTags": [
+      "$ascii",
+      "$text"
+    ],
+    "qSrcTables": [
+      "Freights"
+    ]
+  },
+  {
+    "qName": "Shipping line - CLEARANCE",
+    "qTags": [
+      "$ascii",
+      "$text"
+    ],
+    "qSrcTables": [
+      "Freights"
+    ]
+  },
+  {
+    "qName": "Special Permit - CLEARANCE",
+    "qTags": [
+      "$ascii",
+      "$text"
+    ],
+    "qSrcTables": [
+      "Freights"
+    ]
+  },
+  {
+    "qName": "TempDate",
+    "qTags": [
+      "$numeric",
+      "$integer",
+      "$timestamp",
+      "$date"
+    ],
+    "qSrcTables": [
+      "Master_Calendar"
+    ]
+  },
+  {
+    "qName": "To Date - SEA",
+    "qTags": [
+      "$numeric",
+      "$integer"
+    ],
+    "qSrcTables": [
+      "Freights"
+    ]
+  },
+  {
+    "qName": "Total Freight - SEA",
+    "qTags": [
+      "$numeric",
+      "$integer"
+    ],
+    "qSrcTables": [
+      "Freights"
+    ]
+  },
+  {
+    "qName": "Total Freight MST - SEA",
+    "qTags": [
+      "$numeric",
+      "$integer"
+    ],
+    "qSrcTables": [
+      "Freights"
+    ]
+  },
+  {
+    "qName": "Transit Port - SEA",
+    "qTags": [
+      "$ascii",
+      "$text"
+    ],
+    "qSrcTables": [
+      "Freights"
+    ]
+  },
+  {
+    "qName": "Transit Time - LAND",
+    "qTags": [
+      "$numeric",
+      "$integer"
+    ],
+    "qSrcTables": [
+      "Freights"
+    ]
+  },
+  {
+    "qName": "Transit Time - SEA",
+    "qTags": [
+      "$numeric",
+      "$integer"
+    ],
+    "qSrcTables": [
+      "Freights"
+    ]
+  },
+  {
+    "qName": "TransitTime - AIR",
+    "qTags": [
+      "$numeric",
+      "$integer"
+    ],
+    "qSrcTables": [
+      "Freights"
+    ]
+  },
+  {
+    "qName": "Transport Equipment - SEA",
+    "qTags": [
+      "$ascii",
+      "$text"
+    ],
+    "qSrcTables": [
+      "Freights"
+    ]
+  },
+  {
+    "qName": "Truck Type - LAND",
+    "qTags": [],
+    "qSrcTables": [
+      "Freights"
+    ]
+  },
+  {
+    "qName": "Type of Container - CLEARANCE",
+    "qTags": [],
+    "qSrcTables": [
+      "Freights"
+    ]
+  },
+  {
+    "qName": "Unit Price",
+    "qTags": [
+      "$numeric"
+    ],
+    "qSrcTables": [
+      "PurchLine"
+    ]
+  },
+  {
+    "qName": "Value of Shipment - AIR",
+    "qTags": [
+      "$ascii",
+      "$text"
+    ],
+    "qSrcTables": [
+      "Freights"
+    ]
+  },
+  {
+    "qName": "Warehouse Site - CLEARANCE",
+    "qTags": [],
+    "qSrcTables": [
+      "Freights"
+    ]
+  },
+  {
+    "qName": "Waybill Number",
+    "qTags": [],
+    "qSrcTables": [
+      "Bill_Of_Lading"
+    ]
+  },
+  {
+    "qName": "Waybill Number - AIR",
+    "qTags": [],
+    "qSrcTables": [
+      "Freights"
+    ]
+  },
+  {
+    "qName": "Week",
+    "qTags": [
+      "$numeric",
+      "$integer"
+    ],
+    "qSrcTables": [
+      "Master_Calendar"
+    ]
+  },
+  {
+    "qName": "Week Day",
+    "qTags": [
+      "$numeric",
+      "$integer"
+    ],
+    "qSrcTables": [
+      "Master_Calendar"
+    ]
+  },
+  {
+    "qName": "Week ID",
+    "qTags": [
+      "$numeric",
+      "$integer"
+    ],
+    "qSrcTables": [
+      "Master_Calendar"
+    ]
+  },
+  {
+    "qName": "Week Year",
+    "qTags": [
+      "$ascii",
+      "$text"
+    ],
+    "qSrcTables": [
+      "Master_Calendar"
+    ]
+  },
+  {
+    "qName": "Weight Difference - AIR",
+    "qTags": [
+      "$numeric"
+    ],
+    "qSrcTables": [
+      "Freights"
+    ]
+  },
+  {
+    "qName": "Weight/Trailer - SEA",
+    "qTags": [
+      "$numeric",
+      "$integer"
+    ],
+    "qSrcTables": [
+      "Freights"
+    ]
+  },
+  {
+    "qName": "Year",
+    "qTags": [
+      "$numeric",
+      "$integer"
+    ],
+    "qSrcTables": [
+      "Master_Calendar"
+    ]
+  }
+]

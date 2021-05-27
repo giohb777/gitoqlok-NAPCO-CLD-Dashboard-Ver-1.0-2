@@ -1,0 +1,26 @@
+[
+  {
+    "qProperty": {
+      "qInfo": {
+        "qId": "1caa7c63-7ff7-4676-ade0-556d633b20c7",
+        "qType": "appprops"
+      },
+      "qMetaDef": {},
+      "sheetTitleBgColor": {
+        "color": "#4477aa",
+        "index": 6
+      },
+      "sheetTitleGradientColor": "",
+      "sheetTitleColor": "",
+      "sheetLogoThumbnail": {
+        "qStaticContentUrlDef": {
+          "qUrl": "/appcontent/99dd8337-08ab-4c29-aa4f-b5c448d8bb37/Powered By MIS.jpg"
+        }
+      },
+      "sheetLogoPosition": "right",
+      "rtl": false,
+      "theme": "sense"
+    },
+    "qChildren": []
+  }
+]

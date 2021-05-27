@@ -1,0 +1,648 @@
+{
+  "qInfos": [
+    {
+      "qId": "0455cd21-7d14-43ac-af8f-03eb6da9cecc",
+      "qType": "sheet"
+    },
+    {
+      "qId": "07b07b09-49c6-467e-92c0-05da7a1af3db",
+      "qType": "listbox"
+    },
+    {
+      "qId": "07b615af-faa1-4010-91a2-f96c42a98f80",
+      "qType": "filterpane"
+    },
+    {
+      "qId": "0ba2ba72-9927-48b4-86b0-dcfb5d096bc2",
+      "qType": "snapshot"
+    },
+    {
+      "qId": "0cb169d2-b89a-494e-90e4-501f89dc0164",
+      "qType": "variable"
+    },
+    {
+      "qId": "13e4bdcc-d1cb-48ec-8c05-570180d6a889",
+      "qType": "filterpane"
+    },
+    {
+      "qId": "1447d07a-22a3-4002-9c3b-bcd1fbe343fb",
+      "qType": "listbox"
+    },
+    {
+      "qId": "19d0ad06-4cf1-4ea1-910f-bff7242bc92e",
+      "qType": "listbox"
+    },
+    {
+      "qId": "1ae57d93-e0be-4994-b3dd-21b74108864d",
+      "qType": "sheet"
+    },
+    {
+      "qId": "1caa7c63-7ff7-4676-ade0-556d633b20c7",
+      "qType": "appprops"
+    },
+    {
+      "qId": "29e9d602-9659-4ae3-be48-a68409017665",
+      "qType": "variable"
+    },
+    {
+      "qId": "302e4166-40ea-42a6-bfe0-0897faa0fc13",
+      "qType": "kpi"
+    },
+    {
+      "qId": "3e1dc3e8-d563-41d2-b3b6-bc743b0c4693",
+      "qType": "filterpane"
+    },
+    {
+      "qId": "45dda54d-fb54-4cc2-aa28-0dd4ad76f36a",
+      "qType": "listbox"
+    },
+    {
+      "qId": "53ec8d3a-cf81-4ba0-8e19-89ddc6704ded",
+      "qType": "listbox"
+    },
+    {
+      "qId": "6382b1b9-c16e-4a0e-a047-b5d8d624bfd7",
+      "qType": "listbox"
+    },
+    {
+      "qId": "6aa65519-dcaf-48b8-88fe-58c2f529ff1c",
+      "qType": "sheet"
+    },
+    {
+      "qId": "6ca7d2b9-cdd7-48b7-ae35-519b0256c8c4",
+      "qType": "filterpane"
+    },
+    {
+      "qId": "6ece9d38-fd21-4f56-a7d8-ddfc1fd0844e",
+      "qType": "filterpane"
+    },
+    {
+      "qId": "7252c3bb-10d3-4afa-a8ca-f5a3aad17fca",
+      "qType": "listbox"
+    },
+    {
+      "qId": "79041eb0-dcaa-4ae0-b9f3-8fc73c62918a",
+      "qType": "table"
+    },
+    {
+      "qId": "8573f4f3-31ae-4de6-ba80-4ac391aac575",
+      "qType": "listbox"
+    },
+    {
+      "qId": "8685ca3d-5cae-42c6-a441-e8e60c2c3a91",
+      "qType": "listbox"
+    },
+    {
+      "qId": "8d136618-1aae-4191-a088-777c021f9707",
+      "qType": "listbox"
+    },
+    {
+      "qId": "93e3c8ed-29a8-41ae-b34c-dd72bcfac086",
+      "qType": "listbox"
+    },
+    {
+      "qId": "AmpU",
+      "qType": "table"
+    },
+    {
+      "qId": "BnDTeJ",
+      "qType": "filterpane"
+    },
+    {
+      "qId": "CAtMH",
+      "qType": "variable"
+    },
+    {
+      "qId": "CGtZFm",
+      "qType": "piechart"
+    },
+    {
+      "qId": "CktJCme",
+      "qType": "table"
+    },
+    {
+      "qId": "CteNbPc",
+      "qType": "table"
+    },
+    {
+      "qId": "DTSsGy",
+      "qType": "filterpane"
+    },
+    {
+      "qId": "DWugrgp",
+      "qType": "text-image"
+    },
+    {
+      "qId": "ECqmVG",
+      "qType": "pivot-table"
+    },
+    {
+      "qId": "EPxKVq",
+      "qType": "barchart"
+    },
+    {
+      "qId": "EpGNPS",
+      "qType": "kpi"
+    },
+    {
+      "qId": "EsMf",
+      "qType": "table"
+    },
+    {
+      "qId": "EvLdpNj",
+      "qType": "table"
+    },
+    {
+      "qId": "FDBa",
+      "qType": "listbox"
+    },
+    {
+      "qId": "FFzb",
+      "qType": "kpi"
+    },
+    {
+      "qId": "FKQUBnb",
+      "qType": "listbox"
+    },
+    {
+      "qId": "FLET",
+      "qType": "listbox"
+    },
+    {
+      "qId": "FYwy",
+      "qType": "listbox"
+    },
+    {
+      "qId": "GGZmpy",
+      "qType": "filterpane"
+    },
+    {
+      "qId": "HDBa",
+      "qType": "barchart"
+    },
+    {
+      "qId": "HNNkAu",
+      "qType": "pivot-table"
+    },
+    {
+      "qId": "HbcnpP",
+      "qType": "kpi"
+    },
+    {
+      "qId": "JAdbvA",
+      "qType": "swr-sense-navigation"
+    },
+    {
+      "qId": "JMSrJp",
+      "qType": "kpi"
+    },
+    {
+      "qId": "JeDmpL",
+      "qType": "kpi"
+    },
+    {
+      "qId": "JsbPLYZ",
+      "qType": "barchart"
+    },
+    {
+      "qId": "JwRzUJ",
+      "qType": "linechart"
+    },
+    {
+      "qId": "KTsmTxt",
+      "qType": "table"
+    },
+    {
+      "qId": "KqcKt",
+      "qType": "table"
+    },
+    {
+      "qId": "LmWawT",
+      "qType": "kpi"
+    },
+    {
+      "qId": "MRekqMV",
+      "qType": "table"
+    },
+    {
+      "qId": "Mdjnhhw",
+      "qType": "swr-sense-navigation"
+    },
+    {
+      "qId": "MwFPz",
+      "qType": "text-image"
+    },
+    {
+      "qId": "NHjKz",
+      "qType": "piechart"
+    },
+    {
+      "qId": "NLaFEQ",
+      "qType": "table"
+    },
+    {
+      "qId": "NRs",
+      "qType": "table"
+    },
+    {
+      "qId": "NSkdJmj",
+      "qType": "swr-sense-navigation"
+    },
+    {
+      "qId": "NjZd",
+      "qType": "barchart"
+    },
+    {
+      "qId": "PCrDrSM",
+      "qType": "variable"
+    },
+    {
+      "qId": "PNyUnLm",
+      "qType": "gauge"
+    },
+    {
+      "qId": "PcqQ",
+      "qType": "text-image"
+    },
+    {
+      "qId": "PfVTZ",
+      "qType": "kpi"
+    },
+    {
+      "qId": "PgDb",
+      "qType": "filterpane"
+    },
+    {
+      "qId": "PhxBPz",
+      "qType": "kpi"
+    },
+    {
+      "qId": "QTaQkr",
+      "qType": "swr-sense-navigation"
+    },
+    {
+      "qId": "QTrVkb",
+      "qType": "variable"
+    },
+    {
+      "qId": "QpXVV",
+      "qType": "kpi"
+    },
+    {
+      "qId": "QqrGt",
+      "qType": "variable"
+    },
+    {
+      "qId": "Qyabmw",
+      "qType": "swr-sense-navigation"
+    },
+    {
+      "qId": "RbMkFn",
+      "qType": "widget"
+    },
+    {
+      "qId": "SBdjcu",
+      "qType": "filterpane"
+    },
+    {
+      "qId": "SExpA",
+      "qType": "filterpane"
+    },
+    {
+      "qId": "SsZdwpu",
+      "qType": "barchart"
+    },
+    {
+      "qId": "SyPnLMN",
+      "qType": "linechart"
+    },
+    {
+      "qId": "TVphjKp",
+      "qType": "variable"
+    },
+    {
+      "qId": "UJfZez",
+      "qType": "filterpane"
+    },
+    {
+      "qId": "UawPzwZ",
+      "qType": "piechart"
+    },
+    {
+      "qId": "UqCyh",
+      "qType": "swr-sense-navigation"
+    },
+    {
+      "qId": "VGdsEg",
+      "qType": "pivot-table"
+    },
+    {
+      "qId": "VXkcYw",
+      "qType": "gauge"
+    },
+    {
+      "qId": "VpNEqm",
+      "qType": "table"
+    },
+    {
+      "qId": "WmRmtm",
+      "qType": "filterpane"
+    },
+    {
+      "qId": "XgFZSFp",
+      "qType": "variable"
+    },
+    {
+      "qId": "XhUPJB",
+      "qType": "swr-sense-navigation"
+    },
+    {
+      "qId": "XuDpEjg",
+      "qType": "swr-sense-navigation"
+    },
+    {
+      "qId": "YMFXT",
+      "qType": "table"
+    },
+    {
+      "qId": "YpntYt",
+      "qType": "filterpane"
+    },
+    {
+      "qId": "YxEJjmE",
+      "qType": "kpi"
+    },
+    {
+      "qId": "YxjPtx",
+      "qType": "text-image"
+    },
+    {
+      "qId": "YzNDx",
+      "qType": "swr-sense-navigation"
+    },
+    {
+      "qId": "a7265727-5a90-416a-806a-c49a385cdc3e",
+      "qType": "sheet"
+    },
+    {
+      "qId": "a842898b-02e0-4a6c-bdd5-dde3586350ea",
+      "qType": "sheet"
+    },
+    {
+      "qId": "ad85ed58-f778-4be4-9a28-c95cd3fca57c",
+      "qType": "sheet"
+    },
+    {
+      "qId": "b3350c45-2f70-4683-a6d8-c07d95aa71ba",
+      "qType": "sheet"
+    },
+    {
+      "qId": "b4c1d38c-857e-499c-b905-efe6dd7bb27a",
+      "qType": "table"
+    },
+    {
+      "qId": "b9d53491-1a06-4135-9d8c-185e3932b3f9",
+      "qType": "filterpane"
+    },
+    {
+      "qId": "bGRuad",
+      "qType": "kpi"
+    },
+    {
+      "qId": "bKPSnyD",
+      "qType": "linechart"
+    },
+    {
+      "qId": "ba34f0c2-508b-4088-97c7-1998883b5178",
+      "qType": "table"
+    },
+    {
+      "qId": "bb7d4792-54bf-4281-9858-61f01e328812",
+      "qType": "listbox"
+    },
+    {
+      "qId": "bdZMPj",
+      "qType": "kpi"
+    },
+    {
+      "qId": "bfg",
+      "qType": "listbox"
+    },
+    {
+      "qId": "bsSuM",
+      "qType": "variable"
+    },
+    {
+      "qId": "c72a4f04-6476-44d0-aec3-81a57c28eefd",
+      "qType": "kpi"
+    },
+    {
+      "qId": "cb1d96db-f0f5-4387-9b8f-d758d9e4dc42",
+      "qType": "listbox"
+    },
+    {
+      "qId": "cf46f424-4c96-4146-accb-918b3c7277b3",
+      "qType": "kpi"
+    },
+    {
+      "qId": "d1ccecc2-e706-4bdf-913e-41637cd27187",
+      "qType": "listbox"
+    },
+    {
+      "qId": "dPPnP",
+      "qType": "filterpane"
+    },
+    {
+      "qId": "dbfb114c-b7ad-4c6e-9932-39405a843c88",
+      "qType": "sheet"
+    },
+    {
+      "qId": "dzjU",
+      "qType": "swr-sense-navigation"
+    },
+    {
+      "qId": "e279e826-5d83-4dec-a501-bce9929c0868",
+      "qType": "kpi"
+    },
+    {
+      "qId": "eb3320d5-14ae-47be-8c9b-e02d12347d5c",
+      "qType": "filterpane"
+    },
+    {
+      "qId": "eb4092c6-0b04-4ad9-bca2-602c693740a5",
+      "qType": "masterobject"
+    },
+    {
+      "qId": "eggUMD",
+      "qType": "listbox"
+    },
+    {
+      "qId": "f405f5fb-d45f-4f18-a0f2-81e46007e891",
+      "qType": "filterpane"
+    },
+    {
+      "qId": "f5ba005b-d503-4973-9904-87cb8b9a5b77",
+      "qType": "kpi"
+    },
+    {
+      "qId": "f72faf6d-c259-40d2-90fa-a7a644f31899",
+      "qType": "filterpane"
+    },
+    {
+      "qId": "fCVmk",
+      "qType": "table"
+    },
+    {
+      "qId": "fSKHB",
+      "qType": "linechart"
+    },
+    {
+      "qId": "fd605161-047d-4bec-b36f-9625cb03b383",
+      "qType": "listbox"
+    },
+    {
+      "qId": "gemxbj",
+      "qType": "listbox"
+    },
+    {
+      "qId": "hMTyM",
+      "qType": "listbox"
+    },
+    {
+      "qId": "jHnMGs",
+      "qType": "linechart"
+    },
+    {
+      "qId": "jHpXp",
+      "qType": "variable"
+    },
+    {
+      "qId": "jNDR",
+      "qType": "text-image"
+    },
+    {
+      "qId": "jgQr",
+      "qType": "listbox"
+    },
+    {
+      "qId": "kkZKr",
+      "qType": "filterpane"
+    },
+    {
+      "qId": "mAvGTH",
+      "qType": "barchart"
+    },
+    {
+      "qId": "mKJmd",
+      "qType": "kpi"
+    },
+    {
+      "qId": "mPAkmh",
+      "qType": "filterpane"
+    },
+    {
+      "qId": "mdMgFw",
+      "qType": "filterpane"
+    },
+    {
+      "qId": "mdSWJj",
+      "qType": "text-image"
+    },
+    {
+      "qId": "mecNCFA",
+      "qType": "swr-sense-navigation"
+    },
+    {
+      "qId": "mmmcqbP",
+      "qType": "kpi"
+    },
+    {
+      "qId": "mwDPpjj",
+      "qType": "variable"
+    },
+    {
+      "qId": "nPmAP",
+      "qType": "table"
+    },
+    {
+      "qId": "nUYtsbJ",
+      "qType": "kpi"
+    },
+    {
+      "qId": "nqHxPBc",
+      "qType": "kpi"
+    },
+    {
+      "qId": "pAFLJ",
+      "qType": "filterpane"
+    },
+    {
+      "qId": "pLybcx",
+      "qType": "variable"
+    },
+    {
+      "qId": "ppBUWV",
+      "qType": "variable"
+    },
+    {
+      "qId": "pwTPyUQ",
+      "qType": "filterpane"
+    },
+    {
+      "qId": "pztMPEf",
+      "qType": "gauge"
+    },
+    {
+      "qId": "rnBRHf",
+      "qType": "kpi"
+    },
+    {
+      "qId": "rxUygKV",
+      "qType": "text-image"
+    },
+    {
+      "qId": "ryQLsH",
+      "qType": "variable"
+    },
+    {
+      "qId": "sMwfXf",
+      "qType": "kpi"
+    },
+    {
+      "qId": "sXyjDw",
+      "qType": "gauge"
+    },
+    {
+      "qId": "tJfJmym",
+      "qType": "listbox"
+    },
+    {
+      "qId": "tYpKXW",
+      "qType": "text-image"
+    },
+    {
+      "qId": "tgWAmq",
+      "qType": "text-image"
+    },
+    {
+      "qId": "ugrSVZ",
+      "qType": "variable"
+    },
+    {
+      "qId": "vCQXJf",
+      "qType": "table"
+    },
+    {
+      "qId": "yUNqHfk",
+      "qType": "kpi"
+    },
+    {
+      "qId": "ygfvU",
+      "qType": "kpi"
+    },
+    {
+      "qId": "ypFZtv",
+      "qType": "filterpane"
+    }
+  ]
+}

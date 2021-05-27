@@ -1,0 +1,323 @@
+[
+  {
+    "qProperty": {
+      "qInfo": {
+        "qId": "eb4092c6-0b04-4ad9-bca2-602c693740a5",
+        "qType": "masterobject"
+      },
+      "qMetaDef": {
+        "title": "Customers By Unit Price",
+        "description": "",
+        "tags": []
+      },
+      "qHyperCubeDef": {
+        "qDimensions": [
+          {
+            "qDef": {
+              "qGrouping": "N",
+              "qFieldDefs": [
+                "=$(=(Pick\r\n(\n\t$(v_Selected_Dimension_Air)\n\t,'\" [Shipment Nature - AIR]\"' \n\t,'\" [Service Provider]\"' \t\n\t,'\" [Customer Name]\"' \n    ,'\" [Loading Port - AIR]\"' \n\t, '\"[Destination Port - AIR]\"'\n    ,'\"[Item Name]\"'\n       \n)))"
+              ],
+              "qFieldLabels": [
+                "DIM"
+              ],
+              "qSortCriterias": [
+                {
+                  "qSortByNumeric": 1,
+                  "qSortByAscii": 1,
+                  "qSortByLoadOrder": 1,
+                  "qExpression": {}
+                }
+              ],
+              "qNumberPresentations": [],
+              "qActiveField": 0,
+              "autoSort": true,
+              "cId": "JKPBG",
+              "othersLabel": "Others"
+            },
+            "qOtherTotalSpec": {
+              "qOtherMode": "OTHER_OFF",
+              "qOtherCounted": {
+                "qv": "10"
+              },
+              "qOtherLimit": {
+                "qv": "15"
+              },
+              "qOtherLimitMode": "OTHER_GE_LIMIT",
+              "qForceBadValueKeeping": true,
+              "qApplyEvenWhenPossiblyWrongResult": true,
+              "qOtherSortMode": "OTHER_SORT_DESCENDING",
+              "qTotalMode": "TOTAL_OFF",
+              "qReferencedExpression": {}
+            },
+            "qOtherLabel": {
+              "qv": "Others"
+            },
+            "qTotalLabel": {},
+            "qCalcCond": {},
+            "qAttributeExpressions": [],
+            "qAttributeDimensions": [],
+            "qCalcCondition": {
+              "qCond": {},
+              "qMsg": {}
+            }
+          }
+        ],
+        "qMeasures": [
+          {
+            "qDef": {
+              "qLabel": "Measure",
+              "qTags": [],
+              "qGrouping": "N",
+              "qDef": "Pick (\r\n\n$(v_Switch_Measure_2)\n,count({<  [Freight Type] = {'AIR'}  >} distinct  [Waybill Number - AIR])\n,count({<  [Freight Type] = {'AIR'}  >} distinct  [Purchase Order Key])\n,sum({<  [Freight Type] = {'AIR'}  >}   [Invoice Value - AIR])\n,sum({<  [Freight Type] = {'AIR'}  >}   [Net weight - AIR])\n,sum({<  [Freight Type] = {'AIR'}  >}  [Purchase Price])\n)",
+              "qNumFormat": {
+                "qType": "U",
+                "qnDec": 10,
+                "qUseThou": 0
+              },
+              "qAccumulate": 0,
+              "qActiveExpression": 0,
+              "qExpressions": [],
+              "autoSort": true,
+              "cId": "puykmmw",
+              "numFormatFromTemplate": true,
+              "series": {
+                "type": "bar",
+                "axis": 0,
+                "marker": "circle",
+                "markerFill": true
+              }
+            },
+            "qSortBy": {
+              "qSortByNumeric": -1,
+              "qSortByLoadOrder": 1,
+              "qExpression": {}
+            },
+            "qAttributeExpressions": [
+              {
+                "qExpression": "=$(=(Pick\r\n(\n\t$(v_Selected_Dimension_Air)\n\t,red()\n\t,green()\t\n\t,blue()\n    ,brown()\n    , cyan()\n   , LightRed()\n\n       \n)))",
+                "qAttribute": true,
+                "qNumFormat": {
+                  "qType": "U",
+                  "qnDec": 10,
+                  "qUseThou": 0
+                },
+                "id": "colorByExpression"
+              }
+            ],
+            "qAttributeDimensions": [],
+            "qCalcCond": {},
+            "qCalcCondition": {
+              "qCond": {},
+              "qMsg": {}
+            },
+            "qTrendLines": [],
+            "qMiniChartDef": {
+              "qSortBy": {
+                "qExpression": {}
+              },
+              "qOtherTotalSpec": {
+                "qOtherMode": "OTHER_OFF",
+                "qOtherCounted": {},
+                "qOtherLimit": {},
+                "qOtherLimitMode": "OTHER_GT_LIMIT",
+                "qForceBadValueKeeping": true,
+                "qApplyEvenWhenPossiblyWrongResult": true,
+                "qOtherSortMode": "OTHER_SORT_DESCENDING",
+                "qTotalMode": "TOTAL_OFF",
+                "qReferencedExpression": {}
+              },
+              "qMaxNumberPoints": -1,
+              "qAttributeExpressions": []
+            },
+            "$$hashKey": "object:18661"
+          }
+        ],
+        "qInterColumnSortOrder": [
+          1,
+          0
+        ],
+        "qSuppressZero": true,
+        "qSuppressMissing": true,
+        "qInitialDataFetch": [
+          {
+            "qLeft": 0,
+            "qTop": 0,
+            "qWidth": 17,
+            "qHeight": 500
+          }
+        ],
+        "qReductionMode": "N",
+        "qMode": "S",
+        "qPseudoDimPos": -1,
+        "qNoOfLeftDims": -1,
+        "qMaxStackedCells": 5000,
+        "qCalcCond": {},
+        "qTitle": {},
+        "qCalcCondition": {
+          "qCond": {},
+          "qMsg": {}
+        },
+        "qColumnOrder": [
+          0,
+          1,
+          2
+        ],
+        "qExpansionState": [],
+        "qLayoutExclude": {
+          "qHyperCubeDef": {
+            "qDimensions": [],
+            "qMeasures": [],
+            "qInterColumnSortOrder": [],
+            "qInitialDataFetch": [],
+            "qReductionMode": "N",
+            "qMode": "S",
+            "qPseudoDimPos": -1,
+            "qNoOfLeftDims": -1,
+            "qMaxStackedCells": 5000,
+            "qCalcCond": {},
+            "qTitle": {},
+            "qCalcCondition": {
+              "qCond": {},
+              "qMsg": {}
+            },
+            "qColumnOrder": [],
+            "qExpansionState": []
+          }
+        }
+      },
+      "refLine": {
+        "refLines": []
+      },
+      "showTitles": true,
+      "title": {
+        "qStringExpression": {
+          "qExpr": "=Pick\r\n(\n\t$(v_Selected_Dimension_Air)\n\t,'Nature of Shipments' \n\t,'Service Providers' \t\n\t,'Customers' \n    ,'Loading Ports'\n    ,'Destination Ports'\n    ,'Item Name'\n\n       \n)\n\n& ' By ' \n\n&\n\nPick (\n\n$(v_Switch_Measure_2)\n,'Waybills'\n,'Purchase Orders'\n,'Invoice Value'\n,'Shipment Net Weight'\n,'Unit Price'\n\n)"
+        }
+      },
+      "subtitle": "",
+      "footnote": "",
+      "showDetails": false,
+      "barGrouping": {
+        "grouping": "grouped"
+      },
+      "orientation": "horizontal",
+      "scrollbar": "miniChart",
+      "scrollStartPos": 0,
+      "gridLine": {
+        "auto": true,
+        "spacing": 2
+      },
+      "dataPoint": {
+        "showLabels": true,
+        "showSegmentLabels": false,
+        "showTotalLabels": true,
+        "show": false,
+        "showLineLabels": false,
+        "showBarLabels": false
+      },
+      "components": [
+        {
+          "key": "bar",
+          "style": {
+            "width": 0.7,
+            "strokeColor": {
+              "index": -1,
+              "color": "#205891"
+            },
+            "strokeWidth": "none"
+          }
+        }
+      ],
+      "color": {
+        "auto": false,
+        "mode": "byExpression",
+        "useBaseColors": "off",
+        "paletteColor": {
+          "index": 3,
+          "color": "#276e27"
+        },
+        "useDimColVal": true,
+        "useMeasureGradient": true,
+        "persistent": true,
+        "expressionIsColor": true,
+        "expressionLabel": "",
+        "measureScheme": "sc",
+        "reverseScheme": false,
+        "dimensionScheme": "12",
+        "autoMinMax": true,
+        "measureMin": 0,
+        "measureMax": 10,
+        "altLabel": "Measure",
+        "byDimDef": {
+          "label": "DIM",
+          "key": "=$(=(Pick\r\n(\n\t$(v_Selected_Dimension_One)\n\t,'\" [Carrier Name - SEA]\"' \n\t,'\" [Service Provider]\"' \t\n\t,'\" [Customer Name]\"' \n\n       \n)))",
+          "type": "expression"
+        },
+        "byMeasureDef": {
+          "label": "Measure",
+          "key": "Pick (\r\n\n$(v_Switch_Measure_1)\n,count({<  [Freight Type] = {'SEA'}  >} distinct  [Waybill Number])\n,count({<  [Freight Type] = {'SEA'}  >} distinct  [Container Number])\n,count({<  [Freight Type] = {'SEA'}  >} distinct  [Purchase Order Key])\n\n)",
+          "type": "expression",
+          "activeMeasureIndex": 0
+        },
+        "colorExpression": "=$(=(Pick\r\n(\n\t$(v_Selected_Dimension_Air)\n\t,red()\n\t,green()\t\n\t,blue()\n    ,brown()\n    , cyan()\n   , LightRed()\n\n       \n)))"
+      },
+      "legend": {
+        "show": false,
+        "dock": "auto",
+        "showTitle": false
+      },
+      "dimensionAxis": {
+        "continuousAuto": true,
+        "show": "labels",
+        "label": "auto",
+        "dock": "near",
+        "axisDisplayMode": "auto",
+        "maxVisibleItems": 10
+      },
+      "preferContinuousAxis": true,
+      "measureAxis": {
+        "show": "labels",
+        "dock": "near",
+        "spacing": 1,
+        "autoMinMax": true,
+        "minMax": "min",
+        "min": 0,
+        "max": 10,
+        "logarithmic": false
+      },
+      "visualization": "barchart",
+      "showMiniChartForContinuousAxis": true,
+      "qLayoutExclude": {
+        "disabled": {
+          "qExtendsId": "",
+          "nullMode": "gap",
+          "measureAxes": [
+            {
+              "show": "labels",
+              "dock": "near",
+              "spacing": 1,
+              "autoMinMax": true,
+              "minMax": "min",
+              "min": 0,
+              "max": 10,
+              "logarithmic": false
+            },
+            {
+              "show": "labels",
+              "dock": "far",
+              "spacing": 1,
+              "autoMinMax": true,
+              "minMax": "min",
+              "min": 0,
+              "max": 10
+            }
+          ]
+        },
+        "quarantine": {}
+      },
+      "masterVersion": 0.96
+    },
+    "qChildren": []
+  }
+]
